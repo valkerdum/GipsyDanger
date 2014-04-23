@@ -1,11 +1,134 @@
 <!doctype html>
-<html lang="en">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>DANUVIO</title>
 	<link rel="stylesheet" href="css/main.css">
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+
+	<!--[if lt IE 9]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]--> 
+
+	<script src="js/frameworks/modernizr.js"></script>
+
+	<style>
+
+
+    #owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+
+</style>
 </head>
 <body>
-	<a href="#"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ab, harum, veniam, quas quos quam accusantium voluptatibus similique asperiores eaque fugiat labore commodi vero exercitationem pariatur earum voluptatem reprehenderit minus? ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, magnam, excepturi, explicabo odio accusamus sint consequatur rem dolores a deleniti in laboriosam facere unde deserunt sequi nostrum ratione quasi beatae.</a>
+	
+
+<header> <!-- BARRA DE NAVEGACION FIJA -->
+	<nav class="menu-estatico">
+		<ul>
+			<li><a href="#">Nosotros</a></li>
+			<li><a href="#">Carta</a></li>
+			<li><a href="#">Sparkling wine</a></li>
+			<li><a href="#">Take out & Deliveri</a></li>
+			<li class="logo"><a href="#"><img src="img/logo-danuvio.png" alt="Danuvio Azul"></a></li>
+			<li><a href="#">Beneficios</a></li>
+			<li><a href="#">Noticias</a></li>
+			<li><a href="#">Sociales</a></li>
+			<li><a href="#">Contacto</a></li>
+		</ul>
+	</nav>
+</header> <!-- END BARRA DE NAVEGACION FIJA -->
+
+
+<div class="main-menu-fixed"> <!-- BARRA DE NAVEGACION FIXED -->
+		<nav>
+		<ul>
+			<li><a href="#">Nosotros</a></li>
+			<li><a href="#">Carta</a></li>
+			<li><a href="#">Sparkling wine</a></li>
+			<li><a href="#">Take out & Deliveri</a></li>
+			<li class="logo"><a href="#"><img src="img/logo-danuvio.png" alt="Danuvio Azul"></a></li>
+			<li><a href="#">Beneficios</a></li>
+			<li><a href="#">Noticias</a></li>
+			<li><a href="#">Sociales</a></li>
+			<li><a href="#">Contacto</a></li>
+		</ul>
+	</nav>
+</div> <!-- BARRA DE NAVEGACION FIXED -->
+
+
+
+	<div id="demo" > 
+	    <div id="owl-demo" class="owl-carousel">
+		    <div class="item"><img src="img/slider/fullimage1.jpg" alt=""></div>
+		    <div class="item"><img src="img/slider/fullimage2.jpg" alt=""></div>
+		    <div class="item"><img src="img/slider/fullimage3.jpg" alt=""></div>
+	    </div>
+	</div>
+
+
+
+
+
+
+
+<section class="cuadros-reservas">
+	<div class="container">
+		<div class="container-mitad">
+			<div class="cuadro-reserva">
+				
+			</div>
+		</div>
+		<div class="container-mitad">
+			<div class="cuadro-menu-online">
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+	
+<script src="js/frameworks/jquery.min.js"></script>
+
+<script src="js/frameworks/respond.src.js"></script> <!-- Habilita media queries en IE7+ -->
+
+<script src="js/frameworks/owl.carousel.js"></script>
+
+<script src="js/scripts.js"></script>
+
+
+ <script>
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+
+	      navigation :false,
+	      slideSpeed : 300,
+	      paginationSpeed : 400,
+	      singleItem : true,
+	      autoPlay : 18000,
+	      stopOnHover : true,
+	      transitionStyle : "fade"
+
+
+      });
+    });
+</script>
+
 </body>
 </html>
+

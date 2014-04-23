@@ -13,57 +13,56 @@
 // });
 
 
-// RADIO BUTTONS CUSTOM
+//  RADIO BUTTONS CUSTOM
 
-$(document).ready(function(){
-	  $('input').iCheck({
-	    checkboxClass: 'icheckbox_minimal-blue',
-	    radioClass: 'iradio_minimal-blue',
-	    increaseArea: '20%' // optional
-	  });
-	});
+// $(document).ready(function(){
+// 	  $('input').iCheck({
+// 	    checkboxClass: 'icheckbox_minimal-blue',
+// 	    radioClass: 'iradio_minimal-blue',
+// 	    increaseArea: '20%' // optional
+// 	  });
+// 	});
 
 
-// FANCYBOX
+//  FANCYBOX
 
-$(document).ready(function() {
-			$('.fancybox').fancybox({
-    			helpers : {
-        		title: {
-            		type: 'inside',
-            		position: 'top'
-        			}
-    			}
-			});
+// $(document).ready(function() {
+// 			$('.fancybox').fancybox({
+//     			helpers : {
+//         		title: {
+//             		type: 'inside',
+//             		position: 'top'
+//         			}
+//     			}
+// 			});
+// });
+
+
+	$(window).scroll(function() {
+
+    if ($(window).width() > 767) {
+        // get the amount the window has scrolled
+        var scroll = $(window).scrollTop();
+        //console.log(scroll);
+        // add the 'active' class to the correct li based on the scroll amount
+        if (scroll > 120) {
+
+            if (!$(".main-menu-fixed").hasClass("hfix")) {
+            	$(".main-menu-fixed").fadeIn(400);
+                $(".main-menu-fixed").addClass("hfix");
+
+    
+               
+				/*$(".content-menu").css("display", "none");*/
+            }
+        } else {
+            if ($(".main-menu-fixed").hasClass("hfix")) {
+            	$(".main-menu-fixed").fadeOut(0);
+                $(".main-menu-fixed").removeClass("hfix");
+
+				/*$(".content-menu").css("display", "block");*/
+            }
+        }
+    }
 });
-
-
-
-// MOSTRAR MAS GANADORES
-
-$.fn.slideFadeToggle  = function(speed, easing, callback) {
-        return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
-
-};
-
-
-$("#slideToggle").click(function(event) {
- 	event.preventDefault();
-
-  	$('.slideTogglebox').slideFadeToggle();
-
-    $("#flecha").toggleClass('exp');
-
-});
-
-
-// TOOLTIP
-
-jQuery(function ($) {
-	$('#trigger2').popover({
-		my: 'center bottom',
-		at: 'center top',
-		offset: '0 -12px'
-	});
-});
-
+	

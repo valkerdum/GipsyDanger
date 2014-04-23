@@ -1,22 +1,65 @@
-// Use Compass ('cause it rocks!)
-@import "compass";
+/* HEADER */
 
-// Font weights
-$light: 100;
-$regular: 400;
-$bold: 600;
+nav {
+	height: 92px;
+	background-color: #114188;
+	z-index: 99;
+	position: relative;
 
-// Base Font
-$base-font-family: sans-serif;
-$base-font-weight: $regular;
-$base-font-size: 13px;
-$base-line-height: 1.4;
+	ul {
+	width: 1080px;
+	margin: 0 auto;
 
-// Fixed Font
-$fixed-font-family: monospace;
-$fixed-font-size: 85%;
-$fixed-line-height: $base-line-height;
+		li {
+			@include inline-block;
+			
+			width: 80px;
+			height: 92px;
+	
+			margin-right: 30px;
+			text-align: center;
+		}
 
-// Headings
-$header-font-weight: $bold;
+		li:last-child {
+			margin-right: 0;
+		}
 
+		li.logo {
+			width: 184px;
+			margin-right: 0;
+		}
+	}
+}
+
+
+nav a {
+	color: #ffffff;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: $bold;
+	display: inline-block;
+
+	padding-top: 35px;
+
+	&:hover {
+		color: #f7ca3a;
+	}
+
+	&:visited {
+		color: #fff;
+	}
+}
+
+
+.main-menu-fixed {
+ 	display: none;
+    left: 0;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.hfix {
+	display: block;
+}

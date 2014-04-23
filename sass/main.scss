@@ -20,6 +20,7 @@
 @import "partials/footer";
 
 @import "frameworks/radio";
+@import "frameworks/owl";
 
 
 
@@ -29,5 +30,42 @@
 	width: 581px;
 	overflow-x:hidden;
 }
+
+
+/* ------------ OWL DEMO HOME --------------- */
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owl-carousel {
+	height: 585px;
+}
+
+
+
+
+
+
+/* ------------ HOME --------------- */
+
+.cuadros-reservas {
+	margin-top: -115px;
+	position: relative;
+}
+
+.cuadro-reserva {
+	width: 514px;
+	height: 99px;
+
+	background-color: #13438a
+}
+
+.cuadro-menu-online {
+	@extend .cuadro-reserva;
+}
+
+
 
 

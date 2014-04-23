@@ -2,51 +2,40 @@
 /* GRILLA */
 
 .container {
-	width: 996px;
+	width: 1080px;
 	display: block;
 	margin: 0 auto;
-	clear: both;
 	position: relative;
 }
 
 .container-mitad {
-	width: 495px;
-	display: inline-block;
-	clear: both;
-	vertical-align: top;
+	width: 536px;
+	@include inline-block;
 	position: relative;
 }
 
 .container-tercio {
-	width: 329px;
-	display: inline-block;
-	clear: both;
-	vertical-align: top;
+	width: 356px;
+	@include inline-block;
 	position: relative;
 }
 
 .container-cuarto {
-	width: 240px;
-	display: inline-block;
-	clear: both;
-	vertical-align: top;
+	width: 266px;
+	@include inline-block;
 	position: relative;
 }
 
 .container-quinto {
-	width: 192px;
-	display: inline-block;
-	clear: both;
-	vertical-align: top;
+	width: 215px;
+	@include inline-block;
 	position: relative;
 }
 
 
 .container-sexto {
-	width: 160px;
-	display: inline-block;
-	clear: both;
-	vertical-align: top;
+	width: 176px;
+	@include inline-block;
 	position: relative;
 }
 

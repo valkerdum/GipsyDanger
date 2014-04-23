@@ -2,6 +2,8 @@ a {
 	@include box-sizing(content-box);
 	@include transition-duration(0.25s);
 
+	text-decoration: none;
+
 	&:hover {
 		text-decoration: none;
 	}

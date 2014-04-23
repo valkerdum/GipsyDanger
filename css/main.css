@@ -52,6 +52,7 @@ body {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
+  font-family: "Open Sans", "sans-serif";
 }
 
 /* HEADINGS */
@@ -100,8 +101,9 @@ a {
   -moz-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
+  text-decoration: none;
 }
-/* line 5, ../sass/partials/_buttons.scss */
+/* line 7, ../sass/partials/_buttons.scss */
 a:hover, a:visited {
   text-decoration: none;
 }
@@ -109,92 +111,106 @@ a:hover, a:visited {
 /* GRILLA */
 /* line 4, ../sass/partials/_grids.scss */
 .container {
-  width: 996px;
+  width: 1080px;
   display: block;
   margin: 0 auto;
-  clear: both;
   position: relative;
 }
 
-/* line 12, ../sass/partials/_grids.scss */
+/* line 11, ../sass/partials/_grids.scss */
 .container-mitad {
-  width: 495px;
+  width: 536px;
+  display: -moz-inline-stack;
   display: inline-block;
-  clear: both;
-  vertical-align: top;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
   position: relative;
 }
 
-/* line 20, ../sass/partials/_grids.scss */
+/* line 17, ../sass/partials/_grids.scss */
 .container-tercio {
-  width: 329px;
+  width: 356px;
+  display: -moz-inline-stack;
   display: inline-block;
-  clear: both;
-  vertical-align: top;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
   position: relative;
 }
 
-/* line 28, ../sass/partials/_grids.scss */
+/* line 23, ../sass/partials/_grids.scss */
 .container-cuarto {
-  width: 240px;
+  width: 266px;
+  display: -moz-inline-stack;
   display: inline-block;
-  clear: both;
-  vertical-align: top;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  position: relative;
+}
+
+/* line 29, ../sass/partials/_grids.scss */
+.container-quinto {
+  width: 215px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
   position: relative;
 }
 
 /* line 36, ../sass/partials/_grids.scss */
-.container-quinto {
-  width: 192px;
-  display: inline-block;
-  clear: both;
-  vertical-align: top;
-  position: relative;
-}
-
-/* line 45, ../sass/partials/_grids.scss */
 .container-sexto {
-  width: 160px;
+  width: 176px;
+  display: -moz-inline-stack;
   display: inline-block;
-  clear: both;
-  vertical-align: top;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
   position: relative;
 }
 
 /* TABLAS */
-/* line 58, ../sass/partials/_grids.scss */
+/* line 47, ../sass/partials/_grids.scss */
 .tabla-generica {
   width: 100%;
   height: auto;
 }
-/* line 63, ../sass/partials/_grids.scss */
+/* line 52, ../sass/partials/_grids.scss */
 .tabla-generica tr {
   height: 50px;
   color: #fff;
   font-size: 15px;
   text-align: center;
 }
-/* line 70, ../sass/partials/_grids.scss */
+/* line 59, ../sass/partials/_grids.scss */
 .tabla-generica tr td {
   font-style: italic;
   padding-top: 2px;
   vertical-align: middle;
 }
-/* line 77, ../sass/partials/_grids.scss */
+/* line 66, ../sass/partials/_grids.scss */
 .tabla-generica tr:nth-child(odd) {
   background: #141110;
 }
-/* line 81, ../sass/partials/_grids.scss */
+/* line 70, ../sass/partials/_grids.scss */
 .tabla-generica tr:nth-child(even) {
   background: #1f1f1f;
 }
 
-/* line 87, ../sass/partials/_grids.scss */
+/* line 76, ../sass/partials/_grids.scss */
 .header-tabla {
   background-color: #2d2d2d !important;
   height: 50px;
 }
-/* line 91, ../sass/partials/_grids.scss */
+/* line 80, ../sass/partials/_grids.scss */
 .header-tabla td {
   font-size: 22px;
   color: #ffffff;
@@ -202,6 +218,75 @@ a:hover, a:visited {
   font-style: normal !important;
   padding-top: 7px !important;
   text-align: center;
+}
+
+/* HEADER */
+/* line 3, ../sass/partials/_header.scss */
+nav {
+  height: 92px;
+  background-color: #114188;
+  z-index: 99;
+  position: relative;
+}
+/* line 9, ../sass/partials/_header.scss */
+nav ul {
+  width: 1080px;
+  margin: 0 auto;
+}
+/* line 13, ../sass/partials/_header.scss */
+nav ul li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 80px;
+  height: 92px;
+  margin-right: 30px;
+  text-align: center;
+}
+/* line 23, ../sass/partials/_header.scss */
+nav ul li:last-child {
+  margin-right: 0;
+}
+/* line 27, ../sass/partials/_header.scss */
+nav ul li.logo {
+  width: 184px;
+  margin-right: 0;
+}
+
+/* line 35, ../sass/partials/_header.scss */
+nav a {
+  color: #ffffff;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  display: inline-block;
+  padding-top: 35px;
+}
+/* line 44, ../sass/partials/_header.scss */
+nav a:hover, nav a:visited {
+  color: #f7ca3a;
+}
+/* line 48, ../sass/partials/_header.scss */
+nav a:visited {
+  color: #fff;
+}
+
+/* line 54, ../sass/partials/_header.scss */
+.main-menu-fixed {
+  display: none;
+  left: 0;
+  margin: 0 auto;
+  top: 0;
+  width: 100%;
+  position: fixed;
+}
+
+/* line 63, ../sass/partials/_header.scss */
+.hfix {
+  display: block;
 }
 
 /* ------------PLUGIN RADIO BUTTON --------------- */
@@ -272,10 +357,577 @@ a:hover, a:visited {
   background-position: -180px 0;
 }
 
+/* 
+ *  Core Owl Carousel CSS File
+ *  v1.3.2
+ */
+/* clearfix */
+/* line 7, ../sass/frameworks/_owl.scss */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* display none until init */
+/* line 16, ../sass/frameworks/_owl.scss */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+
+/* line 22, ../sass/frameworks/_owl.scss */
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+/* line 27, ../sass/frameworks/_owl.scss */
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* line 32, ../sass/frameworks/_owl.scss */
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+
+/* line 40, ../sass/frameworks/_owl.scss */
+.owl-carousel .owl-item {
+  float: left;
+}
+
+/* line 44, ../sass/frameworks/_owl.scss */
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+
+/* line 47, ../sass/frameworks/_owl.scss */
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+/* line 57, ../sass/frameworks/_owl.scss */
+.grabbing {
+  cursor: url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+/* line 63, ../sass/frameworks/_owl.scss */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+/*
+*   Owl Carousel Owl Demo Theme 
+*   v1.3.2
+*/
+/* line 82, ../sass/frameworks/_owl.scss */
+.owl-theme .owl-controls {
+  margin-top: -190px;
+  text-align: center;
+  position: relative;
+  z-index: 9;
+}
+
+/* Styling Next and Prev buttons */
+/* line 91, ../sass/frameworks/_owl.scss */
+.owl-theme .owl-controls .owl-buttons div {
+  color: #FFF;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background: #fff;
+  filter: Alpha(Opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+}
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+/* line 108, ../sass/frameworks/_owl.scss */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Styling Pagination*/
+/* line 116, ../sass/frameworks/_owl.scss */
+.owl-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+}
+
+/* line 121, ../sass/frameworks/_owl.scss */
+.owl-theme .owl-controls .owl-page span {
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin: 5px 7px;
+  filter: Alpha(Opacity=40);
+  /*IE7 fix*/
+  opacity: 0.4;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  background: #fff;
+}
+
+/* line 138, ../sass/frameworks/_owl.scss */
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+/* line 145, ../sass/frameworks/_owl.scss */
+.owl-theme .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* preloading images */
+/* line 157, ../sass/frameworks/_owl.scss */
+.owl-item.loading {
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center;
+}
+
+/* 
+ *  Owl Carousel CSS3 Transitions 
+ *  v1.3.2
+ */
+/* line 170, ../sass/frameworks/_owl.scss */
+.owl-origin {
+  -webkit-perspective: 1200px;
+  -webkit-perspective-origin-x: 50%;
+  -webkit-perspective-origin-y: 50%;
+  -moz-perspective: 1200px;
+  -moz-perspective-origin-x: 50%;
+  -moz-perspective-origin-y: 50%;
+  perspective: 1200px;
+}
+
+/* fade */
+/* line 180, ../sass/frameworks/_owl.scss */
+.owl-fade-out {
+  z-index: 10;
+  -webkit-animation: fadeOut .7s both ease;
+  -moz-animation: fadeOut .7s both ease;
+  animation: fadeOut .7s both ease;
+}
+
+/* line 186, ../sass/frameworks/_owl.scss */
+.owl-fade-in {
+  -webkit-animation: fadeIn .7s both ease;
+  -moz-animation: fadeIn .7s both ease;
+  animation: fadeIn .7s both ease;
+}
+
+/* backSlide */
+/* line 192, ../sass/frameworks/_owl.scss */
+.owl-backSlide-out {
+  -webkit-animation: backSlideOut 1s both ease;
+  -moz-animation: backSlideOut 1s both ease;
+  animation: backSlideOut 1s both ease;
+}
+
+/* line 197, ../sass/frameworks/_owl.scss */
+.owl-backSlide-in {
+  -webkit-animation: backSlideIn 1s both ease;
+  -moz-animation: backSlideIn 1s both ease;
+  animation: backSlideIn 1s both ease;
+}
+
+/* goDown */
+/* line 203, ../sass/frameworks/_owl.scss */
+.owl-goDown-out {
+  -webkit-animation: scaleToFade .7s ease both;
+  -moz-animation: scaleToFade .7s ease both;
+  animation: scaleToFade .7s ease both;
+}
+
+/* line 208, ../sass/frameworks/_owl.scss */
+.owl-goDown-in {
+  -webkit-animation: goDown .6s ease both;
+  -moz-animation: goDown .6s ease both;
+  animation: goDown .6s ease both;
+}
+
+/* scaleUp */
+/* line 214, ../sass/frameworks/_owl.scss */
+.owl-fadeUp-in {
+  -webkit-animation: scaleUpFrom .5s ease both;
+  -moz-animation: scaleUpFrom .5s ease both;
+  animation: scaleUpFrom .5s ease both;
+}
+
+/* line 220, ../sass/frameworks/_owl.scss */
+.owl-fadeUp-out {
+  -webkit-animation: scaleUpTo .5s ease both;
+  -moz-animation: scaleUpTo .5s ease both;
+  animation: scaleUpTo .5s ease both;
+}
+
+/* Keyframes */
+/*empty*/
+@-webkit-keyframes empty {
+  /* line 228, ../sass/frameworks/_owl.scss */
+  0% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes empty {
+  /* line 231, ../sass/frameworks/_owl.scss */
+  0% {
+    opacity: 1;
+  }
+}
+
+@keyframes empty {
+  /* line 234, ../sass/frameworks/_owl.scss */
+  0% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  /* line 237, ../sass/frameworks/_owl.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 238, ../sass/frameworks/_owl.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  /* line 241, ../sass/frameworks/_owl.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 242, ../sass/frameworks/_owl.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  /* line 245, ../sass/frameworks/_owl.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 246, ../sass/frameworks/_owl.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  /* line 249, ../sass/frameworks/_owl.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 250, ../sass/frameworks/_owl.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  /* line 253, ../sass/frameworks/_owl.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 254, ../sass/frameworks/_owl.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  /* line 257, ../sass/frameworks/_owl.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 258, ../sass/frameworks/_owl.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes backSlideOut {
+  /* line 261, ../sass/frameworks/_owl.scss */
+  25% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px);
+  }
+
+  /* line 262, ../sass/frameworks/_owl.scss */
+  75% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(-200%);
+  }
+
+  /* line 263, ../sass/frameworks/_owl.scss */
+  100% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(-200%);
+  }
+}
+
+@-moz-keyframes backSlideOut {
+  /* line 266, ../sass/frameworks/_owl.scss */
+  25% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px);
+  }
+
+  /* line 267, ../sass/frameworks/_owl.scss */
+  75% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px) translateX(-200%);
+  }
+
+  /* line 268, ../sass/frameworks/_owl.scss */
+  100% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px) translateX(-200%);
+  }
+}
+
+@keyframes backSlideOut {
+  /* line 271, ../sass/frameworks/_owl.scss */
+  25% {
+    opacity: .5;
+    transform: translateZ(-500px);
+  }
+
+  /* line 272, ../sass/frameworks/_owl.scss */
+  75% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(-200%);
+  }
+
+  /* line 273, ../sass/frameworks/_owl.scss */
+  100% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(-200%);
+  }
+}
+
+@-webkit-keyframes backSlideIn {
+  /* line 276, ../sass/frameworks/_owl.scss */
+  0%, 25% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px) translateX(200%);
+  }
+
+  /* line 277, ../sass/frameworks/_owl.scss */
+  75% {
+    opacity: .5;
+    -webkit-transform: translateZ(-500px);
+  }
+
+  /* line 278, ../sass/frameworks/_owl.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0) translateX(0);
+  }
+}
+
+@-moz-keyframes backSlideIn {
+  /* line 281, ../sass/frameworks/_owl.scss */
+  0%, 25% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px) translateX(200%);
+  }
+
+  /* line 282, ../sass/frameworks/_owl.scss */
+  75% {
+    opacity: .5;
+    -moz-transform: translateZ(-500px);
+  }
+
+  /* line 283, ../sass/frameworks/_owl.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateZ(0) translateX(0);
+  }
+}
+
+@keyframes backSlideIn {
+  /* line 286, ../sass/frameworks/_owl.scss */
+  0%, 25% {
+    opacity: .5;
+    transform: translateZ(-500px) translateX(200%);
+  }
+
+  /* line 287, ../sass/frameworks/_owl.scss */
+  75% {
+    opacity: .5;
+    transform: translateZ(-500px);
+  }
+
+  /* line 288, ../sass/frameworks/_owl.scss */
+  100% {
+    opacity: 1;
+    transform: translateZ(0) translateX(0);
+  }
+}
+
+@-webkit-keyframes scaleToFade {
+  /* line 291, ../sass/frameworks/_owl.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+  }
+}
+
+@-moz-keyframes scaleToFade {
+  /* line 294, ../sass/frameworks/_owl.scss */
+  to {
+    opacity: 0;
+    -moz-transform: scale(0.8);
+  }
+}
+
+@keyframes scaleToFade {
+  /* line 297, ../sass/frameworks/_owl.scss */
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+@-webkit-keyframes goDown {
+  /* line 300, ../sass/frameworks/_owl.scss */
+  from {
+    -webkit-transform: translateY(-100%);
+  }
+}
+
+@-moz-keyframes goDown {
+  /* line 303, ../sass/frameworks/_owl.scss */
+  from {
+    -moz-transform: translateY(-100%);
+  }
+}
+
+@keyframes goDown {
+  /* line 306, ../sass/frameworks/_owl.scss */
+  from {
+    transform: translateY(-100%);
+  }
+}
+
+@-webkit-keyframes scaleUpFrom {
+  /* line 310, ../sass/frameworks/_owl.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+  }
+}
+
+@-moz-keyframes scaleUpFrom {
+  /* line 313, ../sass/frameworks/_owl.scss */
+  from {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+  }
+}
+
+@keyframes scaleUpFrom {
+  /* line 316, ../sass/frameworks/_owl.scss */
+  from {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
 /* ------------ MODAL --------------- */
-/* line 27, ../sass/main.scss */
+/* line 28, ../sass/main.scss */
 .modal-basico {
   height: 515px;
   width: 581px;
   overflow-x: hidden;
+}
+
+/* ------------ OWL DEMO HOME --------------- */
+/* line 36, ../sass/main.scss */
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* line 42, ../sass/main.scss */
+.owl-carousel {
+  height: 585px;
+}
+
+/* ------------ HOME --------------- */
+/* line 53, ../sass/main.scss */
+.cuadros-reservas {
+  margin-top: -115px;
+  position: relative;
+}
+
+/* line 58, ../sass/main.scss */
+.cuadro-reserva, .cuadro-menu-online {
+  width: 514px;
+  height: 99px;
+  background-color: #13438a;
 }
