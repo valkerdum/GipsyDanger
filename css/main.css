@@ -1,0 +1,281 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700italic,700,600,300,600italic,400italic,300italic);
+/* Welcome to Compass
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+/* line 1, ../sass/partials/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 1, ../sass/partials/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 1, ../sass/partials/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 3, ../sass/partials/_reset.scss */
+body {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* HEADINGS */
+/* line 5, ../sass/partials/_typography.scss */
+h2 {
+  font-size: 58px;
+  color: #000;
+  font-family: "Open Sans", "sans-serif";
+}
+
+/* line 12, ../sass/partials/_typography.scss */
+h3 {
+  font-size: 38px;
+  color: #000;
+  font-family: "Open Sans", "sans-serif";
+}
+
+/* line 18, ../sass/partials/_typography.scss */
+h4 {
+  font-size: 28px;
+  color: #000;
+  font-family: "Open Sans", "sans-serif";
+}
+
+/* line 24, ../sass/partials/_typography.scss */
+h5 {
+  font-size: 18px;
+  color: #000;
+  font-family: "Open Sans", "sans-serif";
+}
+
+/* MODAL BASICO H2 */
+/* line 34, ../sass/partials/_typography.scss */
+.modal-basico h2 {
+  color: #383838;
+  font-size: 48px;
+  text-align: center;
+}
+
+/* line 1, ../sass/partials/_buttons.scss */
+a {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+/* line 5, ../sass/partials/_buttons.scss */
+a:hover, a:visited {
+  text-decoration: none;
+}
+
+/* GRILLA */
+/* line 4, ../sass/partials/_grids.scss */
+.container {
+  width: 996px;
+  display: block;
+  margin: 0 auto;
+  clear: both;
+  position: relative;
+}
+
+/* line 12, ../sass/partials/_grids.scss */
+.container-mitad {
+  width: 495px;
+  display: inline-block;
+  clear: both;
+  vertical-align: top;
+  position: relative;
+}
+
+/* line 20, ../sass/partials/_grids.scss */
+.container-tercio {
+  width: 329px;
+  display: inline-block;
+  clear: both;
+  vertical-align: top;
+  position: relative;
+}
+
+/* line 28, ../sass/partials/_grids.scss */
+.container-cuarto {
+  width: 240px;
+  display: inline-block;
+  clear: both;
+  vertical-align: top;
+  position: relative;
+}
+
+/* line 36, ../sass/partials/_grids.scss */
+.container-quinto {
+  width: 192px;
+  display: inline-block;
+  clear: both;
+  vertical-align: top;
+  position: relative;
+}
+
+/* line 45, ../sass/partials/_grids.scss */
+.container-sexto {
+  width: 160px;
+  display: inline-block;
+  clear: both;
+  vertical-align: top;
+  position: relative;
+}
+
+/* TABLAS */
+/* line 58, ../sass/partials/_grids.scss */
+.tabla-generica {
+  width: 100%;
+  height: auto;
+}
+/* line 63, ../sass/partials/_grids.scss */
+.tabla-generica tr {
+  height: 50px;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+/* line 70, ../sass/partials/_grids.scss */
+.tabla-generica tr td {
+  font-style: italic;
+  padding-top: 2px;
+  vertical-align: middle;
+}
+/* line 77, ../sass/partials/_grids.scss */
+.tabla-generica tr:nth-child(odd) {
+  background: #141110;
+}
+/* line 81, ../sass/partials/_grids.scss */
+.tabla-generica tr:nth-child(even) {
+  background: #1f1f1f;
+}
+
+/* line 87, ../sass/partials/_grids.scss */
+.header-tabla {
+  background-color: #2d2d2d !important;
+  height: 50px;
+}
+/* line 91, ../sass/partials/_grids.scss */
+.header-tabla td {
+  font-size: 22px;
+  color: #ffffff;
+  font-family: 'bignoodletitlingoblique';
+  font-style: normal !important;
+  padding-top: 7px !important;
+  text-align: center;
+}
+
+/* ------------PLUGIN RADIO BUTTON --------------- */
+/* line 4, ../sass/frameworks/_radio.scss */
+.icheckbox_minimal-blue,
+.iradio_minimal-blue {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background: url(../img/blue.png) no-repeat;
+  border: none;
+  cursor: pointer;
+  margin: 0 0 20px;
+  vertical-align: middle;
+}
+
+/* line 18, ../sass/frameworks/_radio.scss */
+.icheckbox_minimal-blue {
+  background-position: 0 0;
+}
+
+/* line 21, ../sass/frameworks/_radio.scss */
+.icheckbox_minimal-blue.hover {
+  background-position: -20px 0;
+}
+
+/* line 24, ../sass/frameworks/_radio.scss */
+.icheckbox_minimal-blue.checked {
+  background-position: -40px 0;
+}
+
+/* line 27, ../sass/frameworks/_radio.scss */
+.icheckbox_minimal-blue.disabled {
+  background-position: -60px 0;
+  cursor: default;
+}
+
+/* line 31, ../sass/frameworks/_radio.scss */
+.icheckbox_minimal-blue.checked.disabled {
+  background-position: -80px 0;
+}
+
+/* line 35, ../sass/frameworks/_radio.scss */
+.iradio_minimal-blue {
+  background-position: -100px 0;
+}
+
+/* line 38, ../sass/frameworks/_radio.scss */
+.iradio_minimal-blue.hover {
+  background-position: -120px 0;
+}
+
+/* line 41, ../sass/frameworks/_radio.scss */
+.iradio_minimal-blue.checked {
+  background-position: -140px 0;
+}
+
+/* line 44, ../sass/frameworks/_radio.scss */
+.iradio_minimal-blue.disabled {
+  background-position: -160px 0;
+  cursor: default;
+}
+
+/* line 48, ../sass/frameworks/_radio.scss */
+.iradio_minimal-blue.checked.disabled {
+  background-position: -180px 0;
+}
+
+/* ------------ MODAL --------------- */
+/* line 27, ../sass/main.scss */
+.modal-basico {
+  height: 515px;
+  width: 581px;
+  overflow-x: hidden;
+}

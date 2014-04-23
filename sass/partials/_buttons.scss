@@ -1,0 +1,12 @@
+a {
+	@include box-sizing(content-box);
+	@include transition-duration(0.25s);
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&:visited {
+		@extend a:hover;
+	}
+}
