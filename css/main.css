@@ -12,6 +12,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -47,33 +50,30 @@ table {
   border-spacing: 0;
 }
 
-/* line 3, ../sass/partials/_reset.scss */
+/* line 5, ../sass/partials/_reset.scss */
 body {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
   font-family: "Open Sans", "sans-serif";
 }
 
 /* HEADINGS */
 /* line 5, ../sass/partials/_typography.scss */
 h2 {
-  font-size: 58px;
-  color: #000;
+  font-size: 30px;
+  color: #fff;
   font-family: "Open Sans", "sans-serif";
 }
 
 /* line 12, ../sass/partials/_typography.scss */
 h3 {
-  font-size: 38px;
+  font-size: 35px;
   color: #000;
   font-family: "Open Sans", "sans-serif";
 }
 
 /* line 18, ../sass/partials/_typography.scss */
 h4 {
-  font-size: 28px;
-  color: #000;
+  font-size: 20px;
+  color: #fff;
   font-family: "Open Sans", "sans-serif";
 }
 
@@ -84,8 +84,24 @@ h5 {
   font-family: "Open Sans", "sans-serif";
 }
 
+/* line 31, ../sass/partials/_typography.scss */
+p {
+  font-family: "Open Sans", "sans-serif";
+  font-size: 13px;
+}
+
+/* line 37, ../sass/partials/_typography.scss */
+.bold {
+  font-weight: 700;
+}
+
+/* line 41, ../sass/partials/_typography.scss */
+.italic {
+  font-style: italic;
+}
+
 /* MODAL BASICO H2 */
-/* line 34, ../sass/partials/_typography.scss */
+/* line 47, ../sass/partials/_typography.scss */
 .modal-basico h2 {
   color: #383838;
   font-size: 48px;
@@ -106,6 +122,33 @@ a {
 /* line 7, ../sass/partials/_buttons.scss */
 a:hover, a:visited {
   text-decoration: none;
+}
+
+/* line 18, ../sass/partials/_buttons.scss */
+.btn-ver-mas-small {
+  height: 28px;
+  width: 103px;
+  padding: 6px 0 0;
+  font-size: 15px;
+  font-style: italic;
+  color: #fff;
+  background-color: #0e3e85;
+}
+/* line 30, ../sass/partials/_buttons.scss */
+.btn-ver-mas-small:hover {
+  background-color: #f7ca3a;
+}
+
+/* line 37, ../sass/partials/_buttons.scss */
+.btn-mas-flat {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0e3e85;
+  font-style: italic;
+}
+/* line 43, ../sass/partials/_buttons.scss */
+.btn-mas-flat:hover {
+  color: #f7ca3a;
 }
 
 /* GRILLA */
@@ -224,7 +267,7 @@ a:hover, a:visited {
 /* line 3, ../sass/partials/_header.scss */
 nav {
   height: 92px;
-  background-color: #114188;
+  background-color: #0e3e85;
   z-index: 99;
   position: relative;
 }
@@ -257,8 +300,8 @@ nav ul li.logo {
 }
 
 /* line 35, ../sass/partials/_header.scss */
-nav a {
-  color: #ffffff;
+nav ul li a {
+  color: #fff;
   font-size: 16px;
   font-style: italic;
   font-weight: 700;
@@ -266,15 +309,20 @@ nav a {
   padding-top: 35px;
 }
 /* line 44, ../sass/partials/_header.scss */
-nav a:hover, nav a:visited {
+nav ul li a:hover, nav ul li a:visited {
   color: #f7ca3a;
 }
 /* line 48, ../sass/partials/_header.scss */
-nav a:visited {
+nav ul li a:visited {
   color: #fff;
 }
 
-/* line 54, ../sass/partials/_header.scss */
+/* line 55, ../sass/partials/_header.scss */
+ul li.logo a {
+  padding-top: 15px;
+}
+
+/* line 60, ../sass/partials/_header.scss */
 .main-menu-fixed {
   display: none;
   left: 0;
@@ -284,7 +332,7 @@ nav a:visited {
   position: fixed;
 }
 
-/* line 63, ../sass/partials/_header.scss */
+/* line 69, ../sass/partials/_header.scss */
 .hfix {
   display: block;
 }
@@ -449,7 +497,7 @@ nav a:visited {
 */
 /* line 82, ../sass/frameworks/_owl.scss */
 .owl-theme .owl-controls {
-  margin-top: -190px;
+  margin-top: -210px;
   text-align: center;
   position: relative;
   z-index: 9;
@@ -897,8 +945,13 @@ nav a:visited {
   }
 }
 
+/* line 27, ../sass/main.scss */
+body {
+  background-color: #eaeaea;
+}
+
 /* ------------ MODAL --------------- */
-/* line 28, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 .modal-basico {
   height: 515px;
   width: 581px;
@@ -906,28 +959,98 @@ nav a:visited {
 }
 
 /* ------------ OWL DEMO HOME --------------- */
-/* line 36, ../sass/main.scss */
+/* line 40, ../sass/main.scss */
 #owl-demo .item img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* line 42, ../sass/main.scss */
+/* line 46, ../sass/main.scss */
 .owl-carousel {
   height: 585px;
 }
 
 /* ------------ HOME --------------- */
-/* line 53, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 .cuadros-reservas {
-  margin-top: -115px;
   position: relative;
+  margin: -145px 0 25px;
 }
 
-/* line 58, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 .cuadro-reserva, .cuadro-menu-online {
   width: 514px;
   height: 99px;
-  background-color: #13438a;
+  padding: 5px 25px;
+  color: #fff;
+  line-height: 1.4;
+  position: relative;
+  background-color: #0e3e85;
+}
+/* line 72, ../sass/main.scss */
+.cuadro-reserva a, .cuadro-menu-online a {
+  color: #fff;
+}
+/* line 76, ../sass/main.scss */
+.cuadro-reserva img, .cuadro-menu-online img {
+  position: absolute;
+  right: 25px;
+  top: 35px;
+}
+
+/* ------------ HOME CUADROS NOTICIAS --------------- */
+/* line 91, ../sass/main.scss */
+.contenedor-noticias-home {
+  margin: 0 0 50px;
+}
+/* line 95, ../sass/main.scss */
+.contenedor-noticias-home .btn-mas-flat {
+  text-align: center;
+  margin: 47px 0 0;
+  display: block;
+}
+
+/* line 102, ../sass/main.scss */
+.cuadro-noticias {
+  width: 340px;
+  height: 420px;
+  padding: 12px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 1.4;
+}
+/* line 111, ../sass/main.scss */
+.cuadro-noticias img {
+  width: 315px;
+  height: 178px;
+  display: block;
+}
+/* line 117, ../sass/main.scss */
+.cuadro-noticias h4 {
+  color: #0e3e85;
+  font-weight: 600;
+  font-style: italic;
+  display: block;
+  margin: 14px 0 0;
+  height: 65px;
+  overflow: hidden;
+}
+/* line 128, ../sass/main.scss */
+.cuadro-noticias p.fecha {
+  font-style: italic;
+  font-size: 12px;
+  color: #b9b9b9;
+  height: auto;
+}
+/* line 135, ../sass/main.scss */
+.cuadro-noticias p {
+  color: #919191;
+  height: 75px;
+  overflow: hidden;
+}
+/* line 141, ../sass/main.scss */
+.cuadro-noticias .btn-ver-mas-small {
+  display: block;
+  margin: 10px auto 0;
 }

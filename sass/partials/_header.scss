@@ -2,7 +2,7 @@
 
 nav {
 	height: 92px;
-	background-color: #114188;
+	background-color: $rojo-oficial;
 	z-index: 99;
 	position: relative;
 
@@ -32,8 +32,8 @@ nav {
 }
 
 
-nav a {
-	color: #ffffff;
+nav ul li a {
+	color: #fff;
 	font-size: 16px;
 	font-style: italic;
 	font-weight: $bold;
@@ -42,12 +42,18 @@ nav a {
 	padding-top: 35px;
 
 	&:hover {
-		color: #f7ca3a;
+		color: $hover-oficial;
 	}
 
 	&:visited {
 		color: #fff;
 	}
+
+}
+
+
+ul li.logo a {
+	padding-top: 15px;
 }
 
 

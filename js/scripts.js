@@ -48,7 +48,6 @@
         if (scroll > 120) {
 
             if (!$(".main-menu-fixed").hasClass("hfix")) {
-            	$(".main-menu-fixed").fadeIn(400);
                 $(".main-menu-fixed").addClass("hfix");
 
     
@@ -57,7 +56,6 @@
             }
         } else {
             if ($(".main-menu-fixed").hasClass("hfix")) {
-            	$(".main-menu-fixed").fadeOut(0);
                 $(".main-menu-fixed").removeClass("hfix");
 
 				/*$(".content-menu").css("display", "block");*/

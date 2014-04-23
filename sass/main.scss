@@ -24,6 +24,10 @@
 
 
 
+body {
+	background-color: #eaeaea;
+}
+
 /* ------------ MODAL --------------- */
 .modal-basico {
 	height: 515px;
@@ -51,15 +55,29 @@
 /* ------------ HOME --------------- */
 
 .cuadros-reservas {
-	margin-top: -115px;
 	position: relative;
+	margin: -145px 0 25px;
 }
 
 .cuadro-reserva {
 	width: 514px;
 	height: 99px;
+	padding: 5px 25px;
+	color: #fff;
+	line-height: $base-line-height;
+	position: relative;
 
-	background-color: #13438a
+	background-color: $rojo-oficial;
+
+	& a {
+		color: #fff;
+	}
+
+	img {
+		position: absolute;
+	    right: 25px;
+	    top: 35px;
+	}
 }
 
 .cuadro-menu-online {
@@ -67,5 +85,63 @@
 }
 
 
+
+/* ------------ HOME CUADROS NOTICIAS --------------- */
+
+.contenedor-noticias-home {
+
+	margin: 0 0 50px;
+
+	& .btn-mas-flat {
+		text-align: center;
+		margin: 47px 0 0;
+		display: block;
+	}
+}
+
+.cuadro-noticias {
+	width: 340px;
+	height: 420px;
+	padding: 12px;
+	background-color: #fff;
+
+	text-align: center;
+	line-height: $base-line-height;
+
+	img {
+		width: 315px;
+		height: 178px;
+		display: block;
+	}
+
+	h4 {
+		color: $rojo-oficial;
+		font-weight: $semi;
+		font-style: italic;
+
+		display: block;
+		margin: 14px 0 0;
+		height: 65px;
+		overflow: hidden;
+	}
+
+	p.fecha {
+		font-style: italic;
+		font-size: 12px;
+		color: #b9b9b9;
+		height: auto;
+	}
+
+	p {
+		color: $gris-p;
+		height: 75px;
+		overflow: hidden;
+	}
+
+	.btn-ver-mas-small {
+		display: block;
+		margin: 10px auto 0;
+	}
+}
 
 

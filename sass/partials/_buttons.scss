@@ -12,3 +12,35 @@ a {
 		@extend a:hover;
 	}
 }
+
+
+
+.btn-ver-mas-small {
+	height: 28px;
+    width: 103px;
+    padding: 6px 0 0;
+
+	font-size: 15px;
+	font-style: italic;
+	color: #fff;
+
+	background-color: $rojo-oficial;
+
+
+	&:hover {
+		background-color: $hover-oficial;
+	}
+
+}
+
+
+.btn-mas-flat {
+	font-size: 18px;
+	font-weight: $semi;
+	color: $rojo-oficial;
+	font-style: italic;
+
+	&:hover {
+		color: $hover-oficial;
+	}
+}
