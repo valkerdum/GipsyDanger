@@ -146,7 +146,7 @@ a:hover, a:visited {
   font-size: 15px;
   font-style: italic;
   color: #fff;
-  background-color: #0e3e85;
+  background-color: #ca1919;
 }
 /* line 30, ../sass/partials/_buttons.scss */
 .btn-ver-mas-small:hover, .btn-ver-mas-small-grey:hover {
@@ -157,7 +157,7 @@ a:hover, a:visited {
 .btn-mas-flat {
   font-size: 18px;
   font-weight: 600;
-  color: #0e3e85;
+  color: #ca1919;
   font-style: italic;
 }
 /* line 43, ../sass/partials/_buttons.scss */
@@ -286,7 +286,7 @@ a:hover, a:visited {
 /* line 3, ../sass/partials/_header.scss */
 nav {
   height: 92px;
-  background-color: #0e3e85;
+  background-color: #ca1919;
   z-index: 99;
   position: relative;
 }
@@ -359,7 +359,7 @@ ul li.logo a {
 /* line 1, ../sass/partials/_footer.scss */
 footer {
   height: 245px;
-  background-color: #0e3e85;
+  background-color: #ca1919;
   display: block;
   padding: 40px 0 0;
 }
@@ -413,6 +413,81 @@ footer .mapsite li a:visited {
 /* line 50, ../sass/partials/_footer.scss */
 footer .container-sexto {
   vertical-align: top;
+}
+/* line 54, ../sass/partials/_footer.scss */
+footer .form-footer {
+  display: block;
+  margin-left: 80px;
+}
+/* line 59, ../sass/partials/_footer.scss */
+footer .name-letter {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 102px;
+  height: 49px;
+  padding: 17px 0;
+  background-color: #cccccc;
+  font-size: 12px;
+  color: #565656;
+  text-align: center;
+}
+/* line 71, ../sass/partials/_footer.scss */
+footer .input {
+  border: none;
+  width: 193px;
+  height: 49px;
+  padding: 0 10px;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin: 0 0 0 -5px;
+  font-size: 12px;
+  color: #535970;
+}
+/* line 84, ../sass/partials/_footer.scss */
+footer .white-cont {
+  height: 49px;
+  margin-left: -5px;
+  width: 137px;
+  padding: 8px 0 0;
+  background-color: #fff;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 94, ../sass/partials/_footer.scss */
+footer .btn-suscribe {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  height: 33px;
+  width: 128px;
+  border: none;
+  background-color: #ca1919;
+}
+/* line 108, ../sass/partials/_footer.scss */
+footer .btn-suscribe:hover {
+  background-color: #212121;
 }
 
 /* 
@@ -1198,7 +1273,7 @@ body {
   color: #fff;
   line-height: 1.4;
   position: relative;
-  background-color: #0e3e85;
+  background-color: #ca1919;
 }
 /* line 72, ../sass/main.scss */
 .cuadro-reserva a, .cuadro-menu-online a {
@@ -1240,7 +1315,7 @@ body {
 }
 /* line 117, ../sass/main.scss */
 .cuadro-noticias h4 {
-  color: #0e3e85;
+  color: #ca1919;
   font-weight: 600;
   font-style: italic;
   display: block;
@@ -1297,7 +1372,7 @@ body {
 .beneficios-home h2 {
   display: block;
   text-align: center;
-  color: #0e3e85;
+  color: #ca1919;
 }
 /* line 186, ../sass/main.scss */
 .beneficios-home .beneficios-container {

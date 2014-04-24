@@ -50,5 +50,67 @@ footer {
 	.container-sexto {
 		vertical-align: top;
 	}
+
+	.form-footer {
+		display: block;
+		margin-left: 80px;
+	}
+
+	.name-letter {
+		@include inline-block;
+		width: 102px;
+		height: 49px;
+		padding: 17px 0;
+		background-color: #cccccc;
+
+		font-size: 12px;
+		color: #565656;
+		text-align: center;
+	}
+
+	.input {
+		border: none;
+		width: 193px;
+	    height: 49px;
+	    padding: 0 10px;
+	    @include transition-duration(0.25s);
+	    @include inline-block;
+	    margin: 0 0 0 -5px;
+
+	    font-size: 12px;
+	    color: #535970;
+	}
+
+	.white-cont {
+		height: 49px;
+	    margin-left: -5px;
+	    width: 137px;
+	    padding: 8px 0 0 ;
+
+		background-color: #fff;
+		@include inline-block;
+	}
+
+	.btn-suscribe {
+	    color: #FFFFFF;
+	    font-size: 12px;
+	    font-weight: $bold;
+	    text-align: center;
+	    cursor: pointer;
+	    @include transition-duration(0.25s);
+
+	    height: 33px;
+	    width: 128px;
+	    border: none;
+	    background-color: $rojo-oficial;
+	}
+
+	.btn-suscribe:hover {
+		background-color: #212121;
+	}
+
+
 }
 
+  
+    
