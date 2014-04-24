@@ -44,3 +44,9 @@ a {
 		color: $hover-oficial;
 	}
 }
+
+.btn-ver-mas-small-grey {
+	@extend .btn-ver-mas-small;
+	
+	background-color: #8f8f90;
+}

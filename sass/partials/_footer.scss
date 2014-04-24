@@ -1,0 +1,54 @@
+footer {
+	height: 245px;
+	background-color: $rojo-oficial;
+	display: block;
+
+	padding: 40px 0 0;
+
+	p {
+		color: #fff;
+		line-height: $base-line-height;
+	}
+
+	a {
+		color: #fff;
+		font-size: 13px;
+	}
+
+	.sociales {
+		list-style: none;
+		display: block;
+		margin: 20px 0 0 ;
+	}
+
+	.sociales li {
+		@include inline-block;
+		margin: 0 16px 0 0;
+	}
+
+	.mapsite {
+		list-style: none;
+	}
+
+	.mapsite li {
+		display: block;
+		margin-bottom: 3px;
+	}
+
+	.mapsite li a {
+		color: #fff;
+	}
+
+	.mapsite li a:hover {
+		color: $hover-oficial;
+	}
+
+	.mapsite li a:visited {
+		color: #fff;
+	}
+
+	.container-sexto {
+		vertical-align: top;
+	}
+}
+

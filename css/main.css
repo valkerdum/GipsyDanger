@@ -57,51 +57,65 @@ body {
 
 /* HEADINGS */
 /* line 5, ../sass/partials/_typography.scss */
+h1 {
+  font-size: 35px;
+  color: #fff;
+  font-family: "Open Sans", "sans-serif";
+}
+
+/* line 11, ../sass/partials/_typography.scss */
 h2 {
   font-size: 30px;
   color: #fff;
   font-family: "Open Sans", "sans-serif";
 }
 
-/* line 12, ../sass/partials/_typography.scss */
+/* line 18, ../sass/partials/_typography.scss */
 h3 {
   font-size: 35px;
   color: #000;
   font-family: "Open Sans", "sans-serif";
 }
 
-/* line 18, ../sass/partials/_typography.scss */
+/* line 24, ../sass/partials/_typography.scss */
 h4 {
   font-size: 20px;
   color: #fff;
   font-family: "Open Sans", "sans-serif";
 }
 
-/* line 24, ../sass/partials/_typography.scss */
+/* line 30, ../sass/partials/_typography.scss */
 h5 {
   font-size: 18px;
   color: #000;
   font-family: "Open Sans", "sans-serif";
 }
 
-/* line 31, ../sass/partials/_typography.scss */
+/* line 37, ../sass/partials/_typography.scss */
 p {
   font-family: "Open Sans", "sans-serif";
   font-size: 13px;
 }
 
-/* line 37, ../sass/partials/_typography.scss */
+/* line 43, ../sass/partials/_typography.scss */
 .bold {
   font-weight: 700;
 }
 
-/* line 41, ../sass/partials/_typography.scss */
+/* line 47, ../sass/partials/_typography.scss */
 .italic {
   font-style: italic;
 }
 
+/* line 51, ../sass/partials/_typography.scss */
+p.fecha {
+  font-style: italic;
+  font-size: 12px;
+  color: #b9b9b9;
+}
+
 /* MODAL BASICO H2 */
-/* line 47, ../sass/partials/_typography.scss */
+/* line 59, ../sass/partials/_typography.scss */
 .modal-basico h2 {
   color: #383838;
   font-size: 48px;
@@ -125,7 +139,7 @@ a:hover, a:visited {
 }
 
 /* line 18, ../sass/partials/_buttons.scss */
-.btn-ver-mas-small {
+.btn-ver-mas-small, .btn-ver-mas-small-grey {
   height: 28px;
   width: 103px;
   padding: 6px 0 0;
@@ -135,7 +149,7 @@ a:hover, a:visited {
   background-color: #0e3e85;
 }
 /* line 30, ../sass/partials/_buttons.scss */
-.btn-ver-mas-small:hover {
+.btn-ver-mas-small:hover, .btn-ver-mas-small-grey:hover {
   background-color: #f7ca3a;
 }
 
@@ -149,6 +163,11 @@ a:hover, a:visited {
 /* line 43, ../sass/partials/_buttons.scss */
 .btn-mas-flat:hover {
   color: #f7ca3a;
+}
+
+/* line 48, ../sass/partials/_buttons.scss */
+.btn-ver-mas-small-grey {
+  background-color: #8f8f90;
 }
 
 /* GRILLA */
@@ -337,72 +356,63 @@ ul li.logo a {
   display: block;
 }
 
-/* ------------PLUGIN RADIO BUTTON --------------- */
-/* line 4, ../sass/frameworks/_radio.scss */
-.icheckbox_minimal-blue,
-.iradio_minimal-blue {
+/* line 1, ../sass/partials/_footer.scss */
+footer {
+  height: 245px;
+  background-color: #0e3e85;
+  display: block;
+  padding: 40px 0 0;
+}
+/* line 8, ../sass/partials/_footer.scss */
+footer p {
+  color: #fff;
+  line-height: 1.4;
+}
+/* line 13, ../sass/partials/_footer.scss */
+footer a {
+  color: #fff;
+  font-size: 13px;
+}
+/* line 18, ../sass/partials/_footer.scss */
+footer .sociales {
+  list-style: none;
+  display: block;
+  margin: 20px 0 0;
+}
+/* line 24, ../sass/partials/_footer.scss */
+footer .sociales li {
+  display: -moz-inline-stack;
   display: inline-block;
-  margin: 0;
-  padding: 0;
-  width: 18px;
-  height: 18px;
-  background: url(../img/blue.png) no-repeat;
-  border: none;
-  cursor: pointer;
-  margin: 0 0 20px;
   vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin: 0 16px 0 0;
 }
-
-/* line 18, ../sass/frameworks/_radio.scss */
-.icheckbox_minimal-blue {
-  background-position: 0 0;
+/* line 29, ../sass/partials/_footer.scss */
+footer .mapsite {
+  list-style: none;
 }
-
-/* line 21, ../sass/frameworks/_radio.scss */
-.icheckbox_minimal-blue.hover {
-  background-position: -20px 0;
+/* line 33, ../sass/partials/_footer.scss */
+footer .mapsite li {
+  display: block;
+  margin-bottom: 3px;
 }
-
-/* line 24, ../sass/frameworks/_radio.scss */
-.icheckbox_minimal-blue.checked {
-  background-position: -40px 0;
+/* line 38, ../sass/partials/_footer.scss */
+footer .mapsite li a {
+  color: #fff;
 }
-
-/* line 27, ../sass/frameworks/_radio.scss */
-.icheckbox_minimal-blue.disabled {
-  background-position: -60px 0;
-  cursor: default;
+/* line 42, ../sass/partials/_footer.scss */
+footer .mapsite li a:hover, footer .mapsite li a:visited {
+  color: #f7ca3a;
 }
-
-/* line 31, ../sass/frameworks/_radio.scss */
-.icheckbox_minimal-blue.checked.disabled {
-  background-position: -80px 0;
+/* line 46, ../sass/partials/_footer.scss */
+footer .mapsite li a:visited {
+  color: #fff;
 }
-
-/* line 35, ../sass/frameworks/_radio.scss */
-.iradio_minimal-blue {
-  background-position: -100px 0;
-}
-
-/* line 38, ../sass/frameworks/_radio.scss */
-.iradio_minimal-blue.hover {
-  background-position: -120px 0;
-}
-
-/* line 41, ../sass/frameworks/_radio.scss */
-.iradio_minimal-blue.checked {
-  background-position: -140px 0;
-}
-
-/* line 44, ../sass/frameworks/_radio.scss */
-.iradio_minimal-blue.disabled {
-  background-position: -160px 0;
-  cursor: default;
-}
-
-/* line 48, ../sass/frameworks/_radio.scss */
-.iradio_minimal-blue.checked.disabled {
-  background-position: -180px 0;
+/* line 50, ../sass/partials/_footer.scss */
+footer .container-sexto {
+  vertical-align: top;
 }
 
 /* 
@@ -945,6 +955,208 @@ ul li.logo a {
   }
 }
 
+/* line 1, ../sass/frameworks/_shadowbox.scss */
+#sb-title-inner, #sb-info-inner, #sb-loading-inner, div.sb-message {
+  font-family: "HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 200;
+  color: #fff;
+}
+
+/* line 2, ../sass/frameworks/_shadowbox.scss */
+#sb-container {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  text-align: left;
+  visibility: hidden;
+  display: none;
+}
+
+/* line 3, ../sass/frameworks/_shadowbox.scss */
+#sb-overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 4, ../sass/frameworks/_shadowbox.scss */
+#sb-wrapper {
+  position: absolute;
+  visibility: hidden;
+  width: 100px;
+}
+
+/* line 5, ../sass/frameworks/_shadowbox.scss */
+#sb-wrapper-inner {
+  position: relative;
+  border: 1px solid #303030;
+  overflow: hidden;
+  height: 100px;
+}
+
+/* line 6, ../sass/frameworks/_shadowbox.scss */
+#sb-body {
+  position: relative;
+  height: 100%;
+}
+
+/* line 7, ../sass/frameworks/_shadowbox.scss */
+#sb-body-inner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 8, ../sass/frameworks/_shadowbox.scss */
+#sb-player.html {
+  height: 100%;
+  overflow: auto;
+}
+
+/* line 9, ../sass/frameworks/_shadowbox.scss */
+#sb-body img {
+  border: none;
+}
+
+/* line 10, ../sass/frameworks/_shadowbox.scss */
+#sb-loading {
+  position: relative;
+  height: 100%;
+}
+
+/* line 11, ../sass/frameworks/_shadowbox.scss */
+#sb-loading-inner {
+  position: absolute;
+  font-size: 14px;
+  line-height: 24px;
+  height: 24px;
+  top: 50%;
+  margin-top: -12px;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 12, ../sass/frameworks/_shadowbox.scss */
+#sb-loading-inner span {
+  background: url(../img/shadowbox/loading.gif) no-repeat;
+  padding-left: 34px;
+  display: inline-block;
+}
+
+/* line 13, ../sass/frameworks/_shadowbox.scss */
+#sb-body, #sb-loading {
+  background-color: #060606;
+}
+
+/* line 14, ../sass/frameworks/_shadowbox.scss */
+#sb-title, #sb-info {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* line 15, ../sass/frameworks/_shadowbox.scss */
+#sb-title, #sb-title-inner {
+  height: 26px;
+  line-height: 26px;
+}
+
+/* line 16, ../sass/frameworks/_shadowbox.scss */
+#sb-title-inner {
+  font-size: 16px;
+}
+
+/* line 17, ../sass/frameworks/_shadowbox.scss */
+#sb-info, #sb-info-inner {
+  height: 20px;
+  line-height: 20px;
+}
+
+/* line 18, ../sass/frameworks/_shadowbox.scss */
+#sb-info-inner {
+  font-size: 12px;
+}
+
+/* line 19, ../sass/frameworks/_shadowbox.scss */
+#sb-nav {
+  float: right;
+  height: 16px;
+  padding: 2px 0;
+  width: 45%;
+}
+
+/* line 20, ../sass/frameworks/_shadowbox.scss */
+#sb-nav a {
+  display: block;
+  float: right;
+  height: 16px;
+  width: 16px;
+  margin-left: 3px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+/* line 21, ../sass/frameworks/_shadowbox.scss */
+#sb-nav-close {
+  background-image: url(../img/shadowbox/close.png);
+}
+
+/* line 22, ../sass/frameworks/_shadowbox.scss */
+#sb-nav-next {
+  background-image: url(../img/shadowbox/next.png);
+}
+
+/* line 23, ../sass/frameworks/_shadowbox.scss */
+#sb-nav-previous {
+  background-image: url(../img/shadowbox/previous.png);
+}
+
+/* line 24, ../sass/frameworks/_shadowbox.scss */
+#sb-nav-play {
+  background-image: url(../img/shadowbox/play.png);
+}
+
+/* line 25, ../sass/frameworks/_shadowbox.scss */
+#sb-nav-pause {
+  background-image: url(../img/shadowbox/pause.png);
+}
+
+/* line 26, ../sass/frameworks/_shadowbox.scss */
+#sb-counter {
+  float: left;
+  width: 45%;
+}
+
+/* line 27, ../sass/frameworks/_shadowbox.scss */
+#sb-counter a {
+  padding: 0 4px 0 0;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* line 28, ../sass/frameworks/_shadowbox.scss */
+#sb-counter a.sb-counter-current {
+  text-decoration: underline;
+}
+
+/* line 29, ../sass/frameworks/_shadowbox.scss */
+div.sb-message {
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 30, ../sass/frameworks/_shadowbox.scss */
+div.sb-message a:link, div.sb-message a:visited {
+  color: #fff;
+  text-decoration: underline;
+}
+
 /* line 27, ../sass/main.scss */
 body {
   background-color: #eaeaea;
@@ -1038,19 +1250,97 @@ body {
 }
 /* line 128, ../sass/main.scss */
 .cuadro-noticias p.fecha {
-  font-style: italic;
-  font-size: 12px;
-  color: #b9b9b9;
-  height: auto;
+  height: 14px;
 }
-/* line 135, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 .cuadro-noticias p {
   color: #919191;
   height: 75px;
   overflow: hidden;
 }
-/* line 141, ../sass/main.scss */
-.cuadro-noticias .btn-ver-mas-small {
+/* line 138, ../sass/main.scss */
+.cuadro-noticias .btn-ver-mas-small, .cuadro-noticias .btn-ver-mas-small-grey {
   display: block;
   margin: 10px auto 0;
+}
+
+/* ------------ GALERIA --------------- */
+/* line 148, ../sass/main.scss */
+.galeria-shadow {
+  list-style: none;
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0 0 75px;
+}
+/* line 153, ../sass/main.scss */
+.galeria-shadow li {
+  float: left;
+  width: 20%;
+  height: auto;
+  overflow: hidden;
+}
+/* line 160, ../sass/main.scss */
+.galeria-shadow li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* line 165, ../sass/main.scss */
+.galeria-shadow li a img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ------------ BENEFICIOS HOME --------------- */
+/* line 180, ../sass/main.scss */
+.beneficios-home h2 {
+  display: block;
+  text-align: center;
+  color: #0e3e85;
+}
+/* line 186, ../sass/main.scss */
+.beneficios-home .beneficios-container {
+  margin: 65px auto 0;
+}
+
+/* line 194, ../sass/main.scss */
+.beneficios-container .btn-mas-flat {
+  text-align: center;
+  margin: 47px 0 65px;
+  display: block;
+}
+/* line 200, ../sass/main.scss */
+.beneficios-container .beneficio-box {
+  width: 340px;
+  height: 230px;
+  padding: 15px 25px;
+  background-image: url("../img/bg-cuadros-gris.jpg");
+  background-repeat: repeat;
+}
+/* line 208, ../sass/main.scss */
+.beneficios-container .beneficio-box h2 {
+  color: #8b8c8d;
+  font-style: italic;
+  font-weight: 700;
+  height: 95px;
+  overflow: hidden;
+}
+/* line 216, ../sass/main.scss */
+.beneficios-container .beneficio-box p.fecha {
+  height: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* line 222, ../sass/main.scss */
+.beneficios-container .beneficio-box p {
+  color: #919191;
+  height: 40px;
+  overflow: hidden;
+}
+/* line 228, ../sass/main.scss */
+.beneficios-container .beneficio-box .btn-ver-mas-small-grey {
+  display: block;
+  margin: 10px auto 0;
+  text-align: center;
 }

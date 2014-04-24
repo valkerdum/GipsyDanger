@@ -2,6 +2,12 @@
 
 /* HEADINGS */
 
+h1 {
+	font-size: 35px;
+	color: #fff;
+	font-family: $base-font-family;
+}
+
 h2 {
 	font-size: 30px;
 	color: #fff;
@@ -40,6 +46,12 @@ p {
 
 .italic {
 	font-style: italic;
+}
+
+p.fecha {
+	font-style: italic;
+	font-size: 12px;
+	color: #b9b9b9;
 }
 
 
