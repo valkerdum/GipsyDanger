@@ -4,13 +4,6 @@ a {
 
 	text-decoration: none;
 
-	&:hover {
-		text-decoration: none;
-	}
-
-	&:visited {
-		@extend a:hover;
-	}
 }
 
 
@@ -47,6 +40,14 @@ a {
 
 .btn-ver-mas-small-grey {
 	@extend .btn-ver-mas-small;
+
+	height: 26px;
+    padding: 8px 0 0;
+    width: 103px;
 	
 	background-color: #8f8f90;
+}
+
+.btn-email:hover {
+	color: $hover-oficial;
 }

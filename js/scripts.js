@@ -45,7 +45,7 @@
         var scroll = $(window).scrollTop();
         //console.log(scroll);
         // add the 'active' class to the correct li based on the scroll amount
-        if (scroll > 120) {
+        if (scroll > 10) {
 
             if (!$(".main-menu-fixed").hasClass("hfix")) {
                 $(".main-menu-fixed").addClass("hfix");

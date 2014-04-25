@@ -36,7 +36,9 @@ body {
 }
 
 
-/* ------------ OWL DEMO HOME --------------- */
+
+
+/* ------------ SLIDER HOME --------------- */
 #owl-demo .item img{
     display: block;
     width: 100%;
@@ -48,7 +50,38 @@ body {
 }
 
 
+.caja-info-slider {
+	padding: 25px 20px;
+	background-color:rgba(255,255,255,0.7);
 
+	  position: absolute;
+	  top: 155px;
+	  z-index: 2;
+	  width:40%;
+	  max-width:457px;
+	  min-width:457px;
+	  height: 194px;
+	  overflow: hidden;
+	  margin: 0 auto;
+	  left: 0;
+	  right: 0;
+
+	text-align: center;
+	
+
+	h2 {
+		color: $rojo-oficial;
+		font-weight: $bold;
+
+	}
+
+	p {
+		color: $rojo-oficial;
+		font-size: 17px;
+
+		margin: 10px 0 0;
+	}
+}
 
 
 
@@ -66,8 +99,11 @@ body {
 	color: #fff;
 	line-height: $base-line-height;
 	position: relative;
+	@include transition-duration(0.35s);
 
 	background-color: $rojo-oficial;
+	background-image: url('../img/bg-cuadros-slider.jpg');
+	background-repeat: repeat;
 
 	& a {
 		color: #fff;
@@ -77,6 +113,10 @@ body {
 		position: absolute;
 	    right: 25px;
 	    top: 35px;
+	}
+
+	&:hover {
+		background-position: 0 -15px;
 	}
 }
 
@@ -164,7 +204,7 @@ body {
 
 			img {
 				width: 100%;
-				height: 100%;
+				height: auto;
 				display: block;
 			}
 		}
@@ -201,6 +241,7 @@ body {
 		width: 340px;
 		height: 230px;
 		padding: 15px 25px;
+		text-align: center;
 
 		background-image: url('../img/bg-cuadros-gris.jpg');
 		background-repeat: repeat;
@@ -209,7 +250,7 @@ body {
 			color: #8b8c8d;
 			font-style: italic;
 			font-weight: $bold;
-			height: 95px;
+			height: 94px;
 			overflow: hidden;
 		}
 
@@ -237,3 +278,132 @@ body {
 }
 
 
+
+/* ------------ GOOGLE MAPS HOME --------------- */
+
+.map-container {
+    position: relative;
+    padding-bottom: 26.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+ 
+.map-container iframe,  
+.map-container object, 
+.map-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------ NOSOTROS --------------- */
+
+.portada-nosotros {
+	background-image: url('../img/nosotros/portada.jpg');
+}
+
+.portada-barra {
+	background-image: url('../img/nosotros/foto-wide-1.jpg');
+}
+
+.portada-tea {
+	background-image: url('../img/nosotros/foto-wide-2.jpg');
+}
+
+
+.img-wide {
+	height: 540px;
+	display: inline-block;
+	overflow: hidden;
+	width: 100%;
+	@include background-size(cover);
+}
+
+
+.img-wide-first {
+	@extend .img-wide;
+	height: 350px;
+}
+
+.info-wide {
+	padding:78px 0 170px;
+	height: 450px;
+	text-align: center;
+	
+	h2 {
+		color: $rojo-oficial;
+		font-weight: $bold;
+		display: block;
+		margin: 0 0 35px;
+	}
+
+	p {
+		color: $gris-p;
+	}
+}
+
+.last-info-wide {
+	padding:78px 0 30px;
+	height: 390px;
+}
+
+
+.nosotros-features {
+	@extend .info-wide;
+
+	padding:0 0 170px;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ NOSOTROS --------------- */
+
+.beneficios-inside {
+	@extend .beneficios-home;
+	margin: 50px 0 0;
+
+	h2 {
+		text-align: left;
+		display: inline-block;
+		margin: inherit;
+	}
+}
+
+
+.beneficios-inside .container-tercio {
+	margin-bottom: 30px;
+}
+
+
+.beneficios-inside .beneficio-box {
+	background: #fff;
+	text-align: center;
+
+	h2 {
+		text-align: center;
+		font-size: 22px;
+		color: $rojo-oficial;
+	}
+}

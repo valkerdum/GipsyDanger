@@ -2,6 +2,8 @@ footer {
 	height: 245px;
 	background-color: $rojo-oficial;
 	display: block;
+	background-image: url('../img/bg-oriental.png');
+	background-repeat: repeat;
 
 	padding: 40px 0 0;
 
@@ -60,7 +62,7 @@ footer {
 		@include inline-block;
 		width: 102px;
 		height: 49px;
-		padding: 17px 0;
+		padding: 20px 0;
 		background-color: #cccccc;
 
 		font-size: 12px;
