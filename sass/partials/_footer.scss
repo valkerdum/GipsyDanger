@@ -115,4 +115,112 @@ footer {
 }
 
   
-    
+
+/*TABLETS*/
+
+@media screen and (max-width:1024px) {
+
+footer {
+	.container {
+		width: 95%;
+	}
+
+	.container-cuarto {
+		width: 25%;
+		vertical-align: top;
+	}
+
+	.container-sexto {
+		width: 17%;
+		vertical-align: top;
+	}
+
+	.container-mitad {
+		width: 45%;
+		vertical-align: top;
+	}
+
+	
+
+	.form-footer {
+		margin-left: 13%; 
+
+
+		.name-letter {
+			display: none;
+		}
+
+		.input {
+			width: 150px;
+		}
+
+		.white-cont {
+			width: 120px;
+		}
+
+		.btn-suscribe {
+			width: 110px;
+		}
+	}
+}
+	
+
+}
+
+
+
+
+
+
+
+
+
+/*TELEFONOS*/
+
+@media screen and (max-width:767px) {
+
+footer {
+	
+	padding: 40px 0;
+	height: auto;
+
+	.container {
+		width: 95%;
+	}
+
+	.container-cuarto {
+		width: 95%;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.container-sexto {
+		width: 95%;
+		display: block;
+		margin: 20px auto;
+		text-align: center;
+		line-height: $base-line-height;
+
+	}
+
+	.mapsite li a {
+		font-size: 20px;
+	}
+
+	.container-mitad {
+		width: 95%;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.form-footer {
+		display: inline-block;
+		margin-left: inherit;
+	}
+
+}
+
+
+}

@@ -38,6 +38,8 @@
 // });
 
 
+
+// MENU FIXED 
 	$(window).scroll(function() {
 
     if ($(window).width() > 767) {
@@ -63,4 +65,12 @@
         }
     }
 });
-	
+
+
+
+
+
+// SCROLL SMOOTH CHROME
+$(function () {
+    $.srSmoothscroll();
+});

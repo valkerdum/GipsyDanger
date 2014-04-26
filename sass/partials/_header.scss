@@ -42,6 +42,8 @@ nav {
     width: 140px;
 }
 
+
+
 .menu-ul li a {
 	color: #fff;
 	font-size: 16px;
@@ -53,6 +55,10 @@ nav {
 
 	&:hover {
 		color: $hover-oficial;
+	}
+
+	&.selected {
+		color:$hover-oficial;
 	}
 
 

@@ -18,9 +18,11 @@
 
 @import "partials/header";
 @import "partials/footer";
+@import "partials/media-queries";
 
 @import "frameworks/owl";
-@import "frameworks/_shadowbox";
+@import "frameworks/shadowbox";
+
 
 
 
@@ -222,9 +224,14 @@ body {
 		text-align: center;
 		color: $rojo-oficial;
 	}
+	
+	.sociales{
+		float: right;
+		height: 25px;
+	}
 
 	.beneficios-container {
-		margin: 65px auto 0;
+		margin: 35px auto 0;
 	}
 
 }
@@ -324,7 +331,7 @@ body {
 
 
 .img-wide {
-	height: 540px;
+	height: 510px;
 	display: inline-block;
 	overflow: hidden;
 	width: 100%;
@@ -334,7 +341,7 @@ body {
 
 .img-wide-first {
 	@extend .img-wide;
-	height: 350px;
+	height: 370px;
 }
 
 .info-wide {
@@ -378,7 +385,7 @@ body {
 
 
 
-/* ------------ NOSOTROS --------------- */
+/* ------------ BENEFICIOS INSIDE --------------- */
 
 .beneficios-inside {
 	@extend .beneficios-home;
@@ -407,3 +414,330 @@ body {
 		color: $rojo-oficial;
 	}
 }
+
+#myList {
+	li{ 
+		display:none;
+	}
+}
+
+
+
+
+/* ------------ CARTA --------------- */
+
+.carta {
+	@extend .beneficios-home;
+	margin: 50px 0 0;
+
+	h2 {
+		text-align: left;
+		display: inline-block;
+		margin: inherit;
+	}
+}
+
+.option-set {
+	margin: 40px 0 0;
+
+	li{
+		display: inline-block;
+		margin-right: 12px;
+	}
+
+	li:last-child {
+		margin-right: 0;
+	}
+
+	.selected {
+		background-color: $rojo-oficial;
+		color: #fff;
+	}
+}
+
+
+.cuadro-carta-cont {
+	@extend .cuadro-noticias;
+
+	float: left;
+	margin-bottom: 30px;
+
+	p {
+		height: 95px;
+	}
+
+	h3 {
+		color: $rojo-oficial;
+		display: block;
+		margin: 10px auto 0;
+		font-weight: $bold;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ SPARKLING WINE --------------- */
+
+.sparkling-wine {
+	@extend .beneficios-home;
+	margin: 50px 0 150px;
+
+	h2 {
+		text-align: left;
+		display: inline-block;
+		margin: inherit;
+	}
+}
+
+
+.sparkling-wine-container {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ TAKEOUT N DELIVERY --------------- */
+
+.takeout-n-delivery {
+	@extend .beneficios-home;
+	margin: 50px 0 150px;
+
+	h2 {
+		text-align: left;
+		display: inline-block;
+		margin: inherit;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ NOTICIAS --------------- */
+
+.listado-noticias-inside {
+	@extend .beneficios-home;
+	margin: 50px 0 0;
+
+	h2 {
+		text-align: left;
+		display: inline-block;
+		margin: inherit;
+	}
+
+
+	.noticias-list-container {
+		margin: 25px auto 90px;
+
+		.cuadro-noticias {
+			margin-bottom: 20px;
+		}
+
+		.btn-mas-flat {
+			text-align: center;
+			margin: 47px 0 0;
+			display: block;
+		}
+	}
+
+}
+
+
+
+
+/* ------------ NOTICIA INSIDE --------------- */
+
+.noticia-inside {
+	@extend .beneficios-home;
+	margin: 50px 0 150px;
+
+	h2 {
+		text-align: left;
+		display: inline-block;
+		margin: inherit;
+	}
+
+}
+
+.noticias-inside-container {
+	@extend .beneficios-container;
+}
+
+.noticia-big {
+	display: block;
+	overflow: hidden;
+	line-height: $base-line-height;
+
+	.noticia-img-wide{
+		width: 710px;
+		height: auto;
+		display: block;
+		margin: 20px 0;
+	}
+
+	.img-wide:nth-child(1){
+		margin: 0 0 20px;
+	}
+
+	h4 {
+		font-style: italic;
+		font-weight: $semi;
+		display: block;
+		color: $rojo-oficial;
+		margin: 20px 0 15px;
+	}
+
+	h4:nth-child(1) {
+		margin: 0;
+	}
+
+	a {
+		color: $rojo-oficial;
+	}
+
+	p.fecha {
+		font-size: 13px;
+	}
+
+	p {
+		margin: 20px 0 0;
+		color: $gris-p;
+		font-size: 13px;
+	}
+}
+
+
+
+.container-aside {
+
+	margin: 0 0 0 25px;
+
+	h4 {
+		color:$rojo-oficial;
+		display: block;
+		margin: 0 0 15px;
+		font-weight: $bold;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	ul li {
+		display: block;
+		margin: 0 0 15px;
+
+		a {
+			text-decoration: none;
+			color: $gris-p;
+			font-size: 13px;
+		}
+
+		a:hover {
+			color: $hover-oficial;
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ SOCIALES --------------- */
+
+.sociales-container {
+	@extend .beneficios-home;
+	margin: 50px 0 150px;
+
+	h2 {
+		text-align: left;
+		display: inline-block;
+		margin: inherit;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ CONTACTO --------------- */
+
+.contacto {
+	@extend .beneficios-home;
+	margin: 50px 0 150px;
+
+	h2 {
+		text-align: left;
+		display: inline-block;
+		margin: inherit;
+	}
+}
+
+
+
+
+
+
+
+

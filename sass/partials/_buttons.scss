@@ -32,6 +32,8 @@ a {
 	font-weight: $semi;
 	color: $rojo-oficial;
 	font-style: italic;
+	cursor: pointer;
+	@include transition-duration(0.25s);
 
 	&:hover {
 		color: $hover-oficial;
@@ -50,4 +52,21 @@ a {
 
 .btn-email:hover {
 	color: $hover-oficial;
+}
+
+
+
+
+
+
+.btn-filtrador {
+	background-color: #fff;
+	color:$rojo-oficial;
+	text-decoration: none;
+
+
+	height: 32px;
+	width: auto;
+	padding: 5px 20px;
+	font-style: italic;
 }

@@ -40,6 +40,20 @@
 	position: relative;
 }
 
+.container-big {
+	width: 710px;
+	@include inline-block;
+	position: relative;
+	vertical-align: top;
+}
+
+.container-aside {
+	width: 340px;
+	@include inline-block;
+	position: relative;
+	vertical-align: top;
+}
+
 
 
 
