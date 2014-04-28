@@ -105,6 +105,7 @@ footer {
 	    width: 128px;
 	    border: none;
 	    background-color: $rojo-oficial;
+	    -webkit-appearance: none;
 	}
 
 	.btn-suscribe:hover {
@@ -136,7 +137,7 @@ footer {
 	}
 
 	.container-mitad {
-		width: 45%;
+		width: 46%;
 		vertical-align: top;
 	}
 

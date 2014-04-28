@@ -18,7 +18,7 @@ nav {
 			width: 80px;
 			height: 92px;
 	
-			margin-right: 30px;
+			margin-right: 22px;
 			text-align: center;
 		}
 
@@ -83,4 +83,69 @@ ul li.logo a {
 
 .hfix {
 	display: block;
+}
+
+.nav-menu {
+	display:none;
+}
+
+
+// TABLETS
+@media screen and (max-width:1024px) {
+
+	nav {
+		background-repeat: repeat;
+		height: auto;
+		min-height: 70px;
+
+		ul {
+
+			margin: inherit;
+
+			li {
+				display: block;
+			}
+		}
+
+
+	}
+
+	.nav-menu {
+			color:#f9f9f9;
+			display:block;
+			padding:20px 10px;
+	}
+
+	.menu-ul {
+		display: none;
+
+		.logo {
+			display: none;
+		}
+
+
+	}
+
+	.nav-open {
+			width:100%;
+			display:block;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+// TELEFONOS
+@media screen and (max-width:767px) {
+
+
+
+
 }

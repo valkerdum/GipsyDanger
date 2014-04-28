@@ -42,7 +42,7 @@
 // MENU FIXED 
 	$(window).scroll(function() {
 
-    if ($(window).width() > 767) {
+    if ($(window).width() > 10) {
         // get the amount the window has scrolled
         var scroll = $(window).scrollTop();
         //console.log(scroll);
@@ -73,4 +73,21 @@
 // SCROLL SMOOTH CHROME
 $(function () {
     $.srSmoothscroll();
+});
+
+
+
+
+// JavaScript Document
+
+$(document).ready(function() {
+    var n = '#nav'
+    $('#nav-menu').click(function() {
+        if ($(n).hasClass('nav-open')) {
+            $(n).removeClass('nav-open');
+        }
+        else {
+            $(n).addClass('nav-open');
+        }
+    });
 });

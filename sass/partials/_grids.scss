@@ -102,3 +102,25 @@
 		text-align: center;
 	}
 }
+
+
+
+
+
+
+
+
+
+// TABLETS
+@media screen and (max-width:1024px) {
+
+	.container {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.container-mitad {
+		width: 49%;
+	}
+
+}

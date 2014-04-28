@@ -43,12 +43,12 @@ body {
 /* ------------ SLIDER HOME --------------- */
 #owl-demo .item img{
     display: block;
-    width: 100%;
+   	width: 100%;
     height: auto;
 }
 
 .owl-carousel {
-	height: 585px;
+	height: auto;
 }
 
 
@@ -57,7 +57,7 @@ body {
 	background-color:rgba(255,255,255,0.7);
 
 	  position: absolute;
-	  top: 155px;
+	  top: 11%;
 	  z-index: 2;
 	  width:40%;
 	  max-width:457px;
@@ -91,7 +91,7 @@ body {
 
 .cuadros-reservas {
 	position: relative;
-	margin: -145px 0 25px;
+	margin: 3% 0 25px;
 }
 
 .cuadro-reserva {
@@ -738,6 +738,102 @@ body {
 
 
 
+// TABLETS
+@media screen and (max-width:1024px) {
+	
 
+	// HOME
+
+	#owl-demo .item img {
+		min-height: 630px;
+		width: auto!important;
+	}
+
+
+	.owl-theme .owl-controls {
+	    margin-top: -350px;
+	}
+
+	.cuadros-reservas {
+
+		.container {
+			width: 95%;
+		}
+
+		.container-mitad {
+			width: 49%;
+		}
+	}
+
+	.cuadro-reserva {
+		width: 338px;
+		height: 70px;
+		margin: 0 auto;
+
+		p {
+			display: none;
+		}
+
+		img {
+			top: 15px;
+		}
+	}
+
+
+
+	.contenedor-noticias-home {
+
+		.container-tercio {
+			width: 49%;
+
+			.cuadro-noticias {
+				margin: $m-auto;
+			}
+		}
+
+		.container-tercio:nth-child(3) {
+			display: none;
+		}
+
+	}
+
+
+
+
+	.beneficios-home {
+
+		.container-tercio {
+			width: 49%;
+
+			.beneficio-box {
+				margin: $m-auto;
+			}
+		}
+
+		.container-tercio:nth-child(3) {
+			display: none;
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+// TELEFONOS
+@media screen and (max-width:767px) {
+
+#owl-demo .item img {
+	  height: 310px !important;
+    min-height:inherit!important;
+    width: auto !important;
+}
+
+
+}
 
 
