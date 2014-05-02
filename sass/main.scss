@@ -1012,7 +1012,7 @@ body {
 			display: none;
 		}
 
-		img {
+		.flecha {
 			top: 15px;
 		}
 	}
@@ -1052,6 +1052,177 @@ body {
 			display: none;
 		}
 	}
+
+
+
+
+
+
+
+
+	// BENEFICIOS
+
+	.beneficios-inside {
+
+		.container {
+			.bold {
+				display: none;
+			}
+		}
+		
+	}
+
+
+
+
+	// CARTA
+	.option-set {
+
+		li {
+			height: 51px;
+		}
+
+	}
+
+	#container {
+		width: 95%!important;
+		margin: 0 auto!important;
+	}
+
+
+	// NOTICIA 
+
+	.listado-noticias-inside  h2 {
+			display: none;
+	}
+
+
+	.noticias-list-container {
+
+		.cuadro-noticias {
+			margin: 0 auto 20px;
+		}
+	}
+
+
+
+
+	// NOTICIAS INSIDE
+	.noticias-inside-container {
+		.container-big {
+		width: 100%;
+		margin: 0 auto;
+		}
+
+		.container-aside {
+			width: 100%;
+			margin: 45px auto 0;
+
+			ul {
+
+				li{
+					margin: 0 0 25px;
+				}
+			}
+		}
+	}
+	
+
+
+
+	.noticia-big {
+		display: block;
+		overflow: hidden;
+		line-height: $base-line-height;
+
+		.noticia-img-wide{
+			width: 100%;
+			height: auto;
+			display: block;
+			margin: 20px 0;
+		}
+
+		.img-wide:nth-child(1){
+			margin: 0 0 20px;
+		}
+	}
+
+
+
+
+
+
+	// SOCIALES
+
+	.sociales-container {
+		h2 {
+			display: none;
+		}
+	}
+
+	.sociales-wrapper {
+		.cuadro-noticias {
+			margin: 0 auto;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// CONTACTO
+
+	.contacto {
+
+		h2 {
+			display: none;
+		}
+
+		.container-big {
+		width: 100%;
+		margin: 0 auto;
+		}
+
+		.container-aside {
+			display: none;
+		}
+
+		.input-form {
+			width: 95%;
+		}
+
+		.area-texto {
+			width: 95%;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

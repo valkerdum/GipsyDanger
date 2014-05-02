@@ -62,8 +62,7 @@
 
 
 <section>
-	<div class="img-wide-first portada-nosotros"  data-stellar-background-ratio=".6">
-	</div>
+	 <div class="img-holder" data-image="img/nosotros/portada.jpg" data-width="1600" data-height="900" data-extra-height="50"></div>
 </section>
 
 
@@ -77,8 +76,7 @@
 
 
 <section>
-	<div class="img-wide portada-barra"  data-stellar-background-ratio=".6">
-	</div>
+	 <div class="img-holder" data-image="img/nosotros/foto-wide-1.jpg" data-width="1600" data-height="900" data-extra-height="50"></div>
 </section>
 
 <section class="info-wide">
@@ -93,8 +91,7 @@
 
 
 <section>
-	<div class="img-wide portada-tea"  data-stellar-background-ratio=".6">
-	</div>
+	 <div class="img-holder" data-image="img/nosotros/foto-wide-2.jpg" data-width="1600" data-height="900" data-extra-height="50"></div>
 </section>
 
 <section class="info-wide last-info-wide">
@@ -186,23 +183,29 @@
 
 <script src="js/frameworks/respond.src.js"></script> <!-- Habilita media queries en IE7+ -->
 
-<script src="js/frameworks/jquery.stellar.min.js"></script> <!-- Efecto imagenes -->
-
  
 
 <script src="js/scripts.js"></script>
 
 
 
-<script>
-	jQuery(function ($) {
-		$(window).stellar({
-				horizontalScrolling: false,
-				verticalOffset: 0,
-				horizontalOffset: 0
-		});
-	});
-</script>
+<script src="js/frameworks/jquery.imageScroll.js"></script>
+    <script>
+        $('.img-holder').imageScroll({
+           image: null,
+           imageAttribute: 'image',
+           container: $('body'),
+           speed: 0.2,
+           coverRatio: 0.75,
+           holderClass: 'img-holder',
+           holderMinHeight: 100,
+           extraHeight: 0,
+           mediaWidth: 1600,
+           mediaHeight: 900,
+           parallax: true,
+           touch: false
+        });
+    </script>
  
 
 
