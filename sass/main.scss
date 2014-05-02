@@ -101,7 +101,7 @@ body {
 	color: #fff;
 	line-height: $base-line-height;
 	position: relative;
-	@include transition-duration(0.35s);
+	@include transition-duration(0.9s);
 
 	background-color: $rojo-oficial;
 	background-image: url('../img/bg-cuadros-slider.jpg');
@@ -111,14 +111,30 @@ body {
 		color: #fff;
 	}
 
-	img {
+	.flecha {
 		position: absolute;
 	    right: 25px;
 	    top: 35px;
+	    width: 22px;
+	    height: 35px;
+	    background-image: url('../img/arrow-home-block.png');
+	    background-position: center top;
 	}
 
 	&:hover {
-		background-position: 0 -15px;
+		background-image: url('../img/bg-cuadros-gris.jpg');
+
+		& h2 {
+			color: $rojo-oficial
+		}
+
+		& a {
+			color:$rojo-oficial;
+		}
+
+		& .flecha {
+			background-position: center -40px;
+		}
 	}
 }
 
@@ -169,6 +185,7 @@ body {
 
 	p.fecha {
 		height: 14px;
+		margin-bottom: 3px;
 	}
 
 	p {
@@ -249,6 +266,7 @@ body {
 		height: 230px;
 		padding: 15px 25px;
 		text-align: center;
+		border: solid 1px #dad8d8;
 
 		background-image: url('../img/bg-cuadros-gris.jpg');
 		background-repeat: repeat;
@@ -405,7 +423,6 @@ body {
 
 
 .beneficios-inside .beneficio-box {
-	background: #fff;
 	text-align: center;
 
 	h2 {
@@ -654,8 +671,6 @@ body {
 
 .container-aside {
 
-	margin: 0 0 0 25px;
-
 	h4 {
 		color:$rojo-oficial;
 		display: block;
@@ -708,6 +723,104 @@ body {
 }
 
 
+.sociales-container .container-tercio {
+	margin-bottom: 30px;
+}
+
+
+.sociales-container .beneficio-box {
+	background: #fff;
+	text-align: center;
+
+	h2 {
+		text-align: center;
+		font-size: 22px;
+		color: $rojo-oficial;
+	}
+}
+
+
+
+
+.sociales-wrapper {
+	@extend .beneficios-container;
+	.cuadro-noticias {
+		height: 325px;
+
+
+		h4 {
+			height: 64px;
+		}
+
+		.btn-ver-mas-small-grey {
+			background-color: $rojo-oficial;
+			height: 28px;
+    		padding: 4px 0 0;
+		}
+
+		.btn-ver-mas-small-grey:hover {
+			background-color: $hover-oficial;
+		}
+	}
+
+	.btn-mas-flat {
+		display: block;
+		text-align: center;
+	}
+}
+
+
+
+
+.sociales-inside-container {
+	@extend .beneficios-home;
+	margin: 50px 0 150px;
+
+	h2 {
+		text-align: left;
+		display: inline-block;
+		margin: inherit;
+	}
+}
+
+
+.listado-sociales {
+	@extend .beneficios-container;
+}
+
+.fotos-listado {
+	list-style: none;
+
+	li {
+		display: inline-block;
+		margin-bottom: 5px;
+		margin-right: 3px;
+
+		img {
+			width: 206px;
+			height: auto;
+			max-height: 206px;
+		}
+
+		&:nth-child(5){
+			margin-right: 0px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -732,7 +845,132 @@ body {
 		display: inline-block;
 		margin: inherit;
 	}
+
+	.container-big {
+		margin: 35px 0 0;
+	}
+
+
+	.container-aside {
+
+		margin-top: 33px;
+
+		p {
+			color: $dark-gris-p;
+			line-height: $base-line-height;
+			display: block;
+		}
+
+		a {
+			color: $dark-gris-p;
+			line-height: 35px;
+			font-size: $base-font-size;
+			margin-top: 9px;
+			display: block;
+		}
+	}
+
+
+	.sociales {
+		list-style: none;
+		display: block;
+		margin: 10px 0 0 ;
+		float: left;
+	}
+
+	.sociales li {
+		@include inline-block;
+		margin: 0 16px 0 0;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+// FORMULARIOS ESTILOS
+.label-form {
+    color: $rojo-oficial;
+    display: block;
+    font-family: $base-font-family;
+    font-size: 15px;
+    font-weight: $bold;
+    margin: 15px 0 10px;
+    text-transform: none;
+
+    &:nth-child(1) {
+    	margin: 0 0 10px;
+    }
+}
+
+.input-form {
+	
+    border: solid 1px #fff;
+
+    color: $dark-gris-p;
+    text-transform: none;
+    font-family: $base-font-family;
+    font-size: 13px;
+
+    height: 34px;
+    width: 640px;
+    display: block;
+    padding: 0 0 0 7px;
+
+    @include transition-duration(0.25s);
+
+    &:focus {
+		border: solid 1px $hover-oficial;
+	}
+    
+}
+
+.area-texto { 
+    border: solid 1px #fff;
+
+    color: $dark-gris-p;
+    text-transform: none;
+    font-family: $base-font-family;
+    font-size: 13px;
+
+    display: block;
+    height: 230px;
+    width: 640px;
+    margin: 0 0 25px;
+    padding: 10px 0 0 7px;
+
+    @include transition-duration(0.25s);
+
+    &:focus {
+		border: solid 1px $hover-oficial;
+	}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

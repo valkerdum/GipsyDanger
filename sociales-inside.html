@@ -3,7 +3,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>PALACIO DANUBIO AZUL - SPARKLING WINE</title>
+	<title>PALACIO DANUBIO AZUL - SOCIALES</title>
 	<link rel="stylesheet" href="css/main.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -29,12 +29,12 @@
 		<ul class="menu-ul">
 			<li><a href="nosotros.html">Nosotros</a></li>
 			<li><a href="carta.html">Carta</a></li>
-			<li><a href="sparkling-wine.html" class="selected">Sparkling wine</a></li>
+			<li><a href="sparkling-wine.html">Sparkling wine</a></li>
 			<li><a href="takeout-and-delivery.html">Take out & Deliveri</a></li>
 			<li class="logo"><a href="index.html"><img src="img/logo-danuvio.png" alt="Danuvio Azul"></a></li>
 			<li><a href="beneficios.html">Beneficios</a></li>
 			<li><a href="noticias.html">Noticias</a></li>
-			<li><a href="sociales.html">Sociales</a></li>
+			<li><a href="sociales.html" class="selected">Sociales</a></li>
 			<li><a href="contacto.html">Contacto</a></li>
 		</ul>
 	</nav>
@@ -46,32 +46,92 @@
 		<ul class="menu-ul">
 			<li><a href="nosotros.html">Nosotros</a></li>
 			<li><a href="carta.html">Carta</a></li>
-			<li><a href="sparkling-wine.html" class="selected">Sparkling wine</a></li>
+			<li><a href="sparkling-wine.html">Sparkling wine</a></li>
 			<li><a href="takeout-and-delivery.html">Take out & Deliveri</a></li>
 			<li class="logo"><a href="index.html"><img src="img/logo-danuvio.png" alt="Danuvio Azul"></a></li>
 			<li><a href="beneficios.html">Beneficios</a></li>
 			<li><a href="noticias.html">Noticias</a></li>
-			<li><a href="sociales.html">Sociales</a></li>
+			<li><a href="sociales.html" class="selected">Sociales</a></li>
 			<li><a href="contacto.html">Contacto</a></li>
 		</ul>
 	</nav>
 </div> <!-- BARRA DE NAVEGACION FIXED -->
 
 
-
-
-
-
-<section class="sparkling-wine"> <!-- SPARKLING WINE -->
+<section class="sociales-inside-container"> <!-- SOCIALES INSIDE -->
 	<div class="container">
-		<h2 class="bold italic">Sparkling Wine</h2>
+		<h2 class="bold italic">Inauguración salon</h2>
 	</div>
 
-	<div class="sparkling-wine-container">
-		
+	<div class="container">
+		<div class="listado-sociales">
+			<ul class="fotos-listado">
+				<li>
+					<a href="img/galeria-home/big/1-big.jpg" rel="shadowbox[galeria-inside]">
+						<img src="img/galeria-home/thumbs/1.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="img/galeria-home/big/2-big.jpg" rel="shadowbox[galeria-inside]">
+						<img src="img/galeria-home/thumbs/2.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="img/galeria-home/big/3-big.jpg" rel="shadowbox[galeria-inside]">
+						<img src="img/galeria-home/thumbs/3.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="img/galeria-home/big/1-big.jpg" rel="shadowbox[galeria-inside]">
+						<img src="img/galeria-home/thumbs/1.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="img/galeria-home/big/2-big.jpg" rel="shadowbox[galeria-inside]">
+						<img src="img/galeria-home/thumbs/2.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="img/galeria-home/big/3-big.jpg" rel="shadowbox[galeria-inside]">
+						<img src="img/galeria-home/thumbs/3.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="img/galeria-home/big/1-big.jpg" rel="shadowbox[galeria-inside]">
+						<img src="img/galeria-home/thumbs/1.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="img/galeria-home/big/2-big.jpg" rel="shadowbox[galeria-inside]">
+						<img src="img/galeria-home/thumbs/2.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="img/galeria-home/big/3-big.jpg" rel="shadowbox[galeria-inside]">
+						<img src="img/galeria-home/thumbs/3.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="img/galeria-home/big/1-big.jpg" rel="shadowbox[galeria-inside]">
+						<img src="img/galeria-home/thumbs/1.jpg" alt="">
+					</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 
-</section> <!-- END SPARKLING WINE -->
+	
+</section> <!-- END SOCIALES INSIDE -->
+
+
+
+
+
+
+
+
+
+
 
 
   
@@ -123,18 +183,24 @@
 
 
 
-	
 <script src="js/frameworks/jquery.min.js"></script>
 
 <script src="js/frameworks/respond.src.js"></script> <!-- Habilita media queries en IE7+ -->
 
-<script src="js/frameworks/jquery.simplr.smoothscroll.js"></script> <!-- Smooth Scroll -->
-
-<script src="js/frameworks/jquery.mousewheel.min.js"></script> <!-- Smooth Scroll -->
+<script src="js/frameworks/shadowbox.js"></script> <!-- Galerias Shadowbox -->
 
 <script src="js/scripts.js"></script>
 
 
+<!-- SHADOWBOX -->
+<script>
+	Shadowbox.init({
+	    gallery: "galeria-inside",
+		continuous: true,
+		counterType: "skip"
+	});
+</script>
+
+
 </body>
 </html>
-

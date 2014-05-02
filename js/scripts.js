@@ -70,10 +70,10 @@
 
 
 
-// SCROLL SMOOTH CHROME
-$(function () {
-    $.srSmoothscroll();
-});
+// // SCROLL SMOOTH CHROME
+// $(function () {
+//     $.srSmoothscroll();
+// });
 
 
 

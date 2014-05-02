@@ -53,9 +53,17 @@ footer {
 		vertical-align: top;
 	}
 
+	.container-mitad {
+		vertical-align: top;
+	}
+
 	.form-footer {
 		display: block;
 		margin-left: 80px;
+
+		p:nth-child(2){
+			margin-bottom: 9px;
+		}
 	}
 
 	.name-letter {
