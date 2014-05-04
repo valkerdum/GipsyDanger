@@ -242,10 +242,7 @@ body {
 		color: $rojo-oficial;
 	}
 	
-	.sociales{
-		float: right;
-		height: 25px;
-	}
+	
 
 	.beneficios-container {
 		margin: 35px auto 0;
@@ -326,6 +323,21 @@ body {
 
 
 
+.redes-sociales{
+		float: right;
+		height: 25px;
+		padding-left: 70px;
+
+		.facebook-btn {
+			width: 130px;
+			height: 30px;
+			display: inline-block;
+		}
+
+		.twitter-btn {
+			@extend .facebook-btn;
+		}
+}
 
 
 
@@ -335,31 +347,8 @@ body {
 
 /* ------------ NOSOTROS --------------- */
 
-.portada-nosotros {
-	background-image: url('../img/nosotros/portada.jpg');
-}
-
-.portada-barra {
-	background-image: url('../img/nosotros/foto-wide-1.jpg');
-}
-
-.portada-tea {
-	background-image: url('../img/nosotros/foto-wide-2.jpg');
-}
-
-
-.img-wide {
-	height: 510px;
-	display: inline-block;
-	overflow: hidden;
-	width: 100%;
-	@include background-size(cover);
-}
-
-
-.img-wide-first {
-	@extend .img-wide;
-	height: 370px;
+.nosotros-img-tablet {
+	display: none;
 }
 
 .info-wide {
@@ -613,9 +602,11 @@ body {
 	margin: 50px 0 150px;
 
 	h2 {
-		text-align: left;
 		display: inline-block;
-		margin: inherit;
+	    margin: inherit;
+	    max-width: 710px;
+	    text-align: left;
+	    word-wrap: break-word;
 	}
 
 }
@@ -1059,6 +1050,71 @@ body {
 
 
 
+	// SOCIALES BTNS
+	.redes-sociales {
+	    height: 25px;
+	    padding-left: 7%;
+	    text-align: right;
+	    width: 100% !important;
+	}
+
+
+
+
+
+
+
+	// NOSOTROS
+	.img-holder {
+		display: none;
+	}
+
+	.nosotros-img-tablet {
+		display: block;
+		width: 100%;
+		height: 530px;
+	}
+
+	.bg-portada {
+		background-image: url('../img/nosotros/portada-mobile.jpg');
+		background-repeat: no-repeat;
+		@include background-size(cover);
+	}
+
+	.bg-bar {
+		background-image: url('../img/nosotros/bar-mobile.jpg');
+		background-repeat: no-repeat;
+		@include background-size(cover);
+	}
+
+	.bg-tea {
+		background-image: url('../img/nosotros/tea-mobile.jpg');
+		background-repeat: no-repeat;
+		@include background-size(cover);
+	}
+
+
+	.info-wide {
+		.container {
+			width: 85%;
+		}
+	}
+
+
+	.nosotros-features {
+		.container-tercio {
+			display: inline-block;
+		    margin: 0 4% 0 0;
+		    position: relative;
+		    vertical-align: top;
+		    width: 43%;
+
+		    &:nth-child(3){
+		    	margin: 55px 0 0;
+		    }
+		}
+	}
+
 
 	// BENEFICIOS
 
@@ -1076,6 +1132,16 @@ body {
 
 
 	// CARTA
+
+	.carta {
+		h2 {
+			display: none;
+		}
+
+		.redes-sociales {
+			margin-bottom: 40px;
+		}
+	}
 	.option-set {
 
 		li {
@@ -1096,6 +1162,12 @@ body {
 			display: none;
 	}
 
+	.listado-noticias-inside {
+		.redes-sociales {
+			margin-bottom: 40px;
+		}
+	}
+
 
 	.noticias-list-container {
 
@@ -1108,6 +1180,17 @@ body {
 
 
 	// NOTICIAS INSIDE
+
+	.noticia-inside {
+		h2 {
+			display: inline-block;
+		    margin: inherit;
+		    text-align: left;
+		    width: 100%;
+		    word-wrap: break-word;
+		}
+	}
+
 	.noticias-inside-container {
 		.container-big {
 		width: 100%;
@@ -1182,6 +1265,10 @@ body {
 	// CONTACTO
 
 	.contacto {
+
+		.redes-sociales {
+			margin-bottom: 40px;
+		}
 
 		h2 {
 			display: none;
