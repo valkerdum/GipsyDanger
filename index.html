@@ -14,11 +14,15 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
 
-	<!--[if lt IE 9]>
-	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-	<![endif]--> 
-
 	<script src="js/frameworks/modernizr.js"></script>
+
+
+
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
 
 	<style>
 
@@ -67,9 +71,12 @@
 </header> <!-- END BARRA DE NAVEGACION FIJA -->
 
 
-<div class="main-menu-fixed"> <!-- BARRA DE NAVEGACION FIXED -->
-	<nav>
 
+
+
+
+<div class="main-menu-fixed"> <!-- BARRA DE NAVEGACION FIXED -->
+	<nav>	
 	    <ul class="container-menu-mobile"> <!-- BARRA DATOS MOBILE --> 
 			<li>
 				<a id="nav-menu-dos" class="nav-menu">
@@ -100,7 +107,12 @@
 	</nav>
 </div> <!-- BARRA DE NAVEGACION FIXED -->
 
-<div class="wrapper-barra-mobile">
+
+
+
+
+
+<div class="wrapper-barra-mobile"> <!-- BARRA MOBILE -->
 	<div class="container-mobile">
 		<ul>
 			<li><h1>Palacio Danubio Azul</h1>
@@ -118,7 +130,18 @@
 			<li><a href="#" id="close-menu"> <img src="img/btn-cerrar.png" alt=""> CERRAR</a></li>
 		</ul>
 	</div>
-</div>
+</div> <!-- END BARRA MOBILE -->
+
+
+
+
+
+
+
+
+
+
+
 
 <div id="demo" ><!--  SLIDER -->
 	<div id="owl-demo" class="owl-carousel">
@@ -397,7 +420,7 @@
 
 
 <div class="map-container">
-    <iframe width="425" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://mapsengine.google.com/map/embed?mid=zesAP1UwM1fM.kIfP2s5-TDfo"></iframe>
+    <iframe width="425" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.cl/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=+&amp;q=Reyes+Lavalle+3240,+Metro+El+Golf,+Las+Condes&amp;ie=UTF8&amp;hq=Reyes+Lavalle+3240,+Metro+El+Golf,+Las+Condes&amp;hnear=&amp;radius=15000&amp;ll=-33.415681,-70.596395&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed"></iframe><br /><small><a href="https://maps.google.cl/maps?f=q&amp;source=embed&amp;hl=es&amp;geocode=+&amp;q=Reyes+Lavalle+3240,+Metro+El+Golf,+Las+Condes&amp;ie=UTF8&amp;hq=Reyes+Lavalle+3240,+Metro+El+Golf,+Las+Condes&amp;hnear=&amp;radius=15000&amp;ll=-33.415681,-70.596395&amp;spn=0.006295,0.006295&amp;t=m" style="color:#0000FF;text-align:left">Ver mapa más grande</a></small>
 </div>
 
 
@@ -452,8 +475,6 @@
 
 	
 <script src="js/frameworks/jquery.min.js"></script>
-
-<script src="js/frameworks/respond.src.js"></script> <!-- Habilita media queries en IE7+ -->
 
 <script src="js/frameworks/owl.carousel.js"></script> <!--Slider Home -->
 
