@@ -237,6 +237,11 @@ input {
 }
 
 
+.sociales-mobile {
+	display: none;
+}
+
+
 /* ------------ BENEFICIOS HOME --------------- */
 
 .beneficios-home {
@@ -486,7 +491,9 @@ input {
 }
 
 
-
+.accion-filtrado {
+	display: none;
+}
 
 
 
@@ -1053,8 +1060,6 @@ input {
 
 
 
-
-
 	// SOCIALES BTNS
 	.redes-sociales {
 	    height: 25px;
@@ -1062,9 +1067,6 @@ input {
 	    text-align: right;
 	    width: 100% !important;
 	}
-
-
-
 
 
 
@@ -1259,14 +1261,6 @@ input {
 
 
 
-
-
-
-
-
-
-
-
 	// CONTACTO
 
 	.contacto {
@@ -1297,26 +1291,19 @@ input {
 		}
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1328,11 +1315,299 @@ input {
 // TELEFONOS
 @media screen and (max-width:767px) {
 
+
+	// HOME
+
+#demo {
+	height: 310px;
+	display: block;
+}
+
 #owl-demo .item img {
-	  height: 310px !important;
+	height: 310px !important;
     min-height:inherit!important;
     width: auto !important;
 }
+
+.caja-info-slider {
+	min-width: inherit;
+	max-width: inherit;
+	width: 96%;
+}
+
+.cuadros-reservas{
+	margin: 30px 0 25px;
+	 .container-mitad {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	.cuadro-reserva {
+		width: 100%;
+	}
+}
+
+.contenedor-noticias-home {
+	.container-tercio {
+		width: 100%;
+
+		.cuadro-noticias {
+			margin: 0 auto 15px;
+		}
+
+	}
+
+	.container-tercio:nth-child(2){
+		display: none;
+	}
+
+	.btn-mas-flat {
+		margin: 20px 0;
+	}
+}
+
+.cuadro-noticias {
+	width: 100%;
+	padding: 0;
+	min-height: 420px;
+	height: auto;
+	padding-bottom: 5px;
+
+	img {
+		display: inline-block;
+    	margin: 9px auto;
+    	width: 95%;
+    	height: auto;
+	
+	}
+
+	a {
+		display: block;
+	}
+
+	p {
+		width: 95%;
+	}
+
+	h4 {
+		margin: 0;
+	}
+
+	.btn-ver-mas-small {
+		margin-bottom: 20px;
+	}
+}
+
+.galeria-shadow {
+	li {
+		width: 50%;
+	}
+}
+
+
+.beneficios-home {
+	.container-tercio {
+		width: 95%;
+		margin: 0 auto;
+		display: block;
+
+		.beneficio-box {
+			width: 100%;
+			margin-bottom: 25px;
+		}
+	}
+}
+
+
+.owl-theme {
+	.owl-controls {
+		  margin-top: -50px;
+	}
+}
+
+.sociales-home {
+	display: none;
+}
+
+
+.sociales-mobile {
+	display: block;
+	height: 450px;
+	margin-bottom: 25px;
+
+	background-image: url('../img/bg-sociales-mobile.jpg');
+	background-repeat: no-repeat;
+	@include background-size(cover);
+
+	.container {
+    	padding-top: 155px;
+
+		.cuadro-reserva {
+			width: 100%;
+
+		}
+	}
+}
+
+
+
+
+.beneficios-home {
+
+	.container-tercio:nth-child(2) {
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+// NOSOTROS 
+.bg-portada {
+	background-size: 100%;
+}
+
+.nosotros-img-tablet {
+	height: 230px;
+}
+
+.info-wide {
+	min-height: 290px;
+    padding: 28px 0 0;
+    height: auto;
+}
+
+.nosotros-features {
+	margin-bottom: 45px;
+
+	.container-tercio {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+
+	.container-tercio:nth-child(3){
+		margin: inherit;
+	}
+}
+
+
+
+// BENEFICIOS INSIDE
+.beneficios-inside {
+	.beneficio-box {
+		h2 {
+			 width: 100%;
+			 height: 65px;
+		}
+	} 
+} 
+
+	
+
+// SOCIALES
+
+.sociales-wrapper {
+	.cuadro-noticias {
+		margin-bottom: 25px;
+	}
+}
+
+
+// SOCIALES INSIDE
+.sociales-inside-container {
+	margin-bottom: 25px;
+
+	.container:nth-child(2){
+		width: 100%;
+	}
+
+
+}
+
+.fotos-listado {
+	display: inline-block;
+
+	li {
+		float: left;
+	    height: auto;
+	    overflow: hidden;
+	    width: 50%;
+	    margin: 0;
+
+		a {
+		  	display: block;
+		    height: 100%;
+		    width: 100%;
+		}
+
+		img {
+			display: block;
+		    height: auto;
+		    width: 100%;
+		}
+	}
+
+
+}
+
+
+
+
+
+// CARTA
+
+
+.option-combo {
+	margin-bottom: 30px;
+
+}
+
+.option-set {
+    margin:0 0 0px;
+    display: none;
+}
+
+.option-set li {
+    border-bottom: 1px solid #c8c8c8;
+    display: block;
+    height: 32px;
+    margin-right: 0;
+    width: 100%;
+}
+
+.btn-filtrador {
+    display: block;
+    height: 21px;
+    line-height: 20px;
+    padding: 5px 20px;
+    text-align: center;
+    width: auto;
+}
+
+.accion-filtrado {
+ 	background-color: #FFFFFF;
+    color: #919191;
+    cursor: pointer;
+    display: block;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 600;
+    height: 50px;
+    line-height: 45px;
+    padding-left: 15px;
+    width: 100%;
+
+    background-image: url('../img/arrow-down.png');
+    background-position: 95% center;
+    background-repeat: no-repeat;
+}
+
+
+
+
 
 
 }

@@ -149,6 +149,7 @@
 
 	<div class="container">
 		<div class="option-combo color">
+			  <div class="accion-filtrado">Selecciona el menú que buscas</div>
 		      <ul class="filter option-set clearfix " data-filter-group="color"> 
 		        <!-- <li><a href="#filter-color-any" class="btn-filtrador selected" data-filter-value="">Todos</a> -->
 		        
@@ -277,13 +278,13 @@
 		<div class="container-cuarto">
 			<p>Palacio Danubio Azul</p>
 			<p>Reyes Lavalle 3240, Metro El Golf<br>Las Condes</p>
-			<p>Teléfono: (+56 2) 2 234 4688</p> <br>
+			<p><a href="tel: 0222344688">Teléfono: (+56 2) 2 234 4688</a></p> <br>
 
 			<a href="mailto:pda@danubioazul.cl" class="btn-email">pda@danubioazul.cl</a>
 
 			<ul class="sociales">
-				<li><a href="#"><img src="img/footer-twitter.png" alt=""></a></li>
-				<li><a href="#"><img src="img/footer-facebook.png" alt=""></a></li>
+				<li><a href="https://twitter.com/danubiopda"><img src="img/footer-twitter.png" alt=""></a></li>
+				<li><a href="https://www.facebook.com/pages/Palacio-Danubio-Azul/11715047611?fref=ts"><img src="img/footer-facebook.png" alt=""></a></li>
 				<li><a href="#"><img src="img/footer-insta.png" alt=""></a></li>
 			</ul>
 		</div>
@@ -311,6 +312,10 @@
                     <span class="white-cont"><input type="button" class="btn-suscribe" value="SUSCRIBETE"></span>
             </form>
 		</div>
+	</div>
+
+	<div class="container volver-arriba">
+		<a href="#top" class="volver-arriba-btn">^ VOLVER  ARRIBA ^</a>
 	</div>
 </footer>
 
@@ -382,6 +387,54 @@
     });
 
   });
+</script>
+
+
+
+
+
+
+
+<script> //MENU FILTRADOR MOBILE
+
+function checkWidth(init) //CHEQUEAMOS EL ANCHO DEL NAVEGADOR PARA AÑADIR CLASE QUE ACTIVA EL TOGGLE EN LOS BOTONES ISOTOPE
+{
+    /*If browser resized, check width again */
+    if ($(window).width() < 767) {
+        $('.btn-filtrador').addClass('toggle-mobile');
+    }
+    else {
+        if (!init) {
+            $('.btn-filtrador').removeClass('toggle-mobile');
+        }
+    }
+}
+
+
+// APLICAMOS EL CHEQUEO
+$(document).ready(function() {
+    checkWidth(true);
+
+    $(window).resize(function() {
+        checkWidth(false);
+    });
+});
+
+
+//ACTIVAMOS LOS SLIDETOGGLE DE LA CAJA CONTENDORA DE LOS BOTONES ISOTOPE MOBILE Y LE AGREGAMOS LA ANIAMCION SLIDETOGGLE A LOS BOTONES ISOTOPE
+$(document).ready(function() {
+    $( ".accion-filtrado" ).click(function() {
+        $( ".option-set" ).slideToggle( "slow", function() {
+        // Animation complete.
+        });
+    });
+
+    $( ".toggle-mobile" ).click(function() {
+        $( ".option-set" ).slideToggle( "slow", function() {
+        // Animation complete.
+        });
+    });
+});
 </script>
 
 </body>

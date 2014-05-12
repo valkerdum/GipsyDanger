@@ -266,7 +266,17 @@ ul li.logo a {
 // TELEFONOS
 @media screen and (max-width:767px) {
 
+	.container-menu-mobile {
+		width: 95%;
 
+		li {
+			margin-right: 5px!important;
+		}
+
+		li:last-child {
+			margin-right: 0!important;
+		}
+	}
 
 
 }

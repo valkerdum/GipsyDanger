@@ -124,6 +124,10 @@ footer {
 
 }
 
+.volver-arriba {
+	display: none;
+}
+
   
 
 /*TABLETS*/
@@ -228,8 +232,22 @@ footer {
 	.form-footer {
 		display: inline-block;
 		margin-left: inherit;
+
+		.input {
+			width: 110px;
+		}
 	}
 
+}
+
+.volver-arriba {
+	display: block;
+	margin-top: 25px;
+	text-align: center;
+
+	.volver-arriba-btn {
+		font-size: 20px;
+	}
 }
 
 
